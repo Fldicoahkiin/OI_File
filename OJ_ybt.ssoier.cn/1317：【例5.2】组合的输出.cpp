@@ -1,49 +1,55 @@
-//搜索与回溯算法 
 #include <iostream>
 #include <iomanip>
+#include <cstdio>
 
 using namespace std;
 
-int nz[21]={0};//n个元素的数组，若为1则表示已经用过即用来判断是否占用 
-int rz[21]={0};//要输出表示的数组，要对其进行赋值 
+const int N=21; 
+
+int visit[N]={0};
+int ans[N]={0};
 int n,r;
 
-void onputt(int r)//输出-->输出数组的函数 
+void onputt(int r)
 {
 	for(int i=1;i<=r;i++)
 	{
-		cout <<setw(3)<<rz[i];
+		cout <<setw(3)<<ans[i];
 	}
 	cout <<endl;
 	return;
 }
 
-void search(int k)//k表示要输出的位置,n表示总元素,r表示输出的最大数量
+void search(int k)
 {
-	
-	for(int i=1;i<=n;i++)//循环r次以填满rz数组 
+	for(int i=1;i<=n;i++) 
 	{
-		if(nz[i]==0 && rz[k-1]<i)//判断当前位未被占用且上一位小于当前位 
+		if(visit[i]==0 && ans[k-1]<i)
 		{
-			nz[i]=1;//将此数标为已用 
-			rz[k]=i;//将i填入rz数组
+			visit[i]=1;
+			ans[k]=i;
 			if(k==r)
 			{
-				onputt(r);//若已填满则输出 
+				onputt(r);
 			}
 			else
 			{
 				search(k+1);//递归 
 			}
-			nz[i]=0;//回溯
-			//rz[i]=0;
+			visit[i]=0;//回溯
 		}
 	}
-	return;//结束函数 
+	return;
 }
 
 int main()
 {
+	
+	#ifndef ONLINE_JUDGE
+		freopen("1317.in", "r", stdin);
+		freopen("1317.out", "w", stdout);
+	#endif
+	
 	cin>>n>>r;
 	search(1);
 	return 0;
