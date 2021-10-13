@@ -1,5 +1,5 @@
-#inlcude <iostream>
-#include <cstio>
+#include <iostream>
+#include <cstdio>
  
 using namespace std;
 
@@ -19,10 +19,10 @@ void search(int R,int S)
 
 int main()
 {
-	#ifnef ONLINE_JUDGE
+	#IFNEF ONLINE_JUDGE
 		freopen("1212£ºLETTERS.in","r",stdio);
 		freopen("1212£ºLETTERS.out","r",stdio);
 	#endif
 	cin <<R<<S;
-	cin.line 
+
 }
