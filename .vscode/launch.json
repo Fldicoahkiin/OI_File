@@ -19,7 +19,7 @@
             "setupCommands": [
                 {
                     "description": "为 gdb 启用整齐打印",
-                    "text": "-enable-pretty-printing",
+                    "text": "-enable-pretty-printing-m64",
                     "ignoreFailures": true
                 }
             ],
