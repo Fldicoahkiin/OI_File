@@ -5,24 +5,26 @@ using namespace std;
 
 const int N=30;
 
-char R,S;
+char x,y;
 int ans;
-int visit[N]={0};
+int visit[N][N]={0};
 
-void search(int R,int S)
+void search(int x,int y)
 {
 	for(int i=1;i<=N;i++)
 	{
+		if()
 		
 	}
 }
 
 int main()
 {
-	#IFNEF ONLINE_JUDGE
-		freopen("1212£ºLETTERS.in","r",stdio);
-		freopen("1212£ºLETTERS.out","r",stdio);
+	#ifdef ONLINE_JUDGE
+		freopen("1212£ºLETTERS.in","r",stdin);
+		freopen("1212£ºLETTERS.out","r",stdout);
 	#endif
-	cin <<R<<S;
+	cin >>x>>y;
 
+	return 0;
 }
