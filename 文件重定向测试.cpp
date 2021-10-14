@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-	freopen("ÎÄ¼þÖØ¶¨Ïò²âÊÔ.in","r",stdin);
-	freopen("ÎÄ¼þÖØ¶¨Ïò²âÊÔ.out","w",stdout);
+	freopen("æ–‡ä»¶é‡å®šå‘æµ‹è¯•.in","r",stdin);
+	freopen("æ–‡ä»¶é‡å®šå‘æµ‹è¯•.out","w",stdout);
 
     string s;
     cin >>s;
