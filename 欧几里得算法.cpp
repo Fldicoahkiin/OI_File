@@ -1,4 +1,4 @@
-//最大公约数 
+//鏈�澶у叕绾︽暟 
 #include <iostream>
 
 using namespace std;

@@ -1,24 +1,25 @@
+//æœªæäº¤
 #include <iostream>
 #include <cstdio>
 
-uisng namespace std;
+using namespace std;
 
-int k;//²âÊÔÊı¾İµÄ×éÊık£¬ºóÃæ¸ú×Åk×éÊäÈë
-int n;//ÃÔ¹¬µÄ¹æÄ£ÊÇn¡Án
-char nmap;//Ò»¸ön¡ÁnµÄ¾ØÕó£¬¾ØÕóÖĞµÄÔªËØÎª.»òÕß#
-int ha,la,hb,lb;//ÃèÊöA´¦ÔÚµÚhaĞĞ, µÚlaÁĞ£¬B´¦ÔÚµÚhbĞĞ, µÚlbÁĞ¡£×¢Òâµ½ha,la,hb,lbÈ«²¿ÊÇ´Ó0¿ªÊ¼¼ÆÊıµÄ¡£
+int k;//æµ‹è¯•æ•°æ®çš„ç»„æ•°kï¼Œåé¢è·Ÿç€kç»„è¾“å…¥
+int n;//è¿·å®«çš„è§„æ¨¡æ˜¯nÃ—n
+char nmap;//ä¸€ä¸ªnÃ—nçš„çŸ©é˜µï¼ŒçŸ©é˜µä¸­çš„å…ƒç´ ä¸º.æˆ–è€…#
+int ha,la,hb,lb;//æè¿°Aå¤„åœ¨ç¬¬haè¡Œ, ç¬¬laåˆ—ï¼ŒBå¤„åœ¨ç¬¬hbè¡Œ, ç¬¬lbåˆ—ã€‚æ³¨æ„åˆ°ha,la,hb,lbå…¨éƒ¨æ˜¯ä»0å¼€å§‹è®¡æ•°çš„ã€‚
 
 int map[101][101]={0};
 int tempmap[101]={0};
 
-int pass=0;//ÅĞ¶ÏÊÇ·ñµ½´ïÖÕµã 
+int pass=0;//åˆ¤æ–­æ˜¯å¦åˆ°è¾¾ç»ˆç‚¹ 
 
-void fuckin(int i)//½«ÁÙÊ±Êı×é×ª½ø¶şÎ¬Êı×éMap 
+void fuckin(int i)//å°†ä¸´æ—¶æ•°ç»„è½¬è¿›äºŒç»´æ•°ç»„Map 
 {
 	for(int j=0;j<n;j++)// 
 	{
 		if(tempmap[j]=='#')
-			map[i][j]=1;//1±íÊ¾¼´ÎªÒÑ×ß¹ı»òÓĞÇ½
+			map[i][j]=1;//1è¡¨ç¤ºå³ä¸ºå·²èµ°è¿‡æˆ–æœ‰å¢™
 	}
 	return;
 }
@@ -31,14 +32,14 @@ void search(int y,int x)
 
 int main()
 {
-	scanf("%d \n %d",&k,&n);//ÊäÈë 
-	for(int i=1;i<=k;i++)//Ñ­»·K´Î 
+	scanf("%d \n %d",&k,&n);//è¾“å…¥ 
+	for(int i=1;i<=k;i++)//å¾ªç¯Kæ¬¡ 
 	{
 		pass=0;
 		for(int j=0;j<n;j++)
 		{
 			gets(tempmap);
-			cin >>ha>>la>>ny>>nx; 
+			cin >>ha>>la>>hb>>lb; 
 			fuckin(j);
 		}
 		search(ha,la);

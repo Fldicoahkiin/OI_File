@@ -5,22 +5,22 @@ using namespace std;
 
 int main()
 {
-	int n;//µÚ¼¸Î»¼´Ò»²ãÑ­»·
-	int temp;//´æ´¢temp
+	int n;//ç¬¬å‡ ä½å³ä¸€å±‚å¾ªçŽ¯
+	int temp;//å­˜å‚¨temp
 	int zs=2;
-	int f;//ÅÐ¶ÏÊÇ·ÇÎªÖÊÊý 
+	int f;//åˆ¤æ–­æ˜¯éžä¸ºè´¨æ•° 
 	cin >>n;
-	for(int i=1;i<=n; ) //µÚ¼¸¸öÖÊÊý
+	for(int i=1;i<=n; ) //ç¬¬å‡ ä¸ªè´¨æ•°
 	{
 		f =1;
 		//cout <<"i="<<i<<endl;
 		//cout <<"j:";
 		//cout <<"zs="<<zs<<endl;
-		//cout <<"¸ùºÅzs="<<sqrt(zs)<<endl;
-		for (int j=2; j<=sqrt(zs);j++)//ÅÐ¶ÏÊÇ·ñÎªÖÊÊý 
+		//cout <<"æ ¹å·zs="<<sqrt(zs)<<endl;
+		for (int j=2; j<=sqrt(zs);j++)//åˆ¤æ–­æ˜¯å¦ä¸ºè´¨æ•° 
 		{
 			//cout <<j<<" ";
-			if(zs%j==0)//ÅÐ¶ÏÖÊÊýÊÇ·ñÄÜ±»jÕû³ý,ÄÜÕû³ý¾Í²»ÊÇÖÊÊý 
+			if(zs%j==0)//åˆ¤æ–­è´¨æ•°æ˜¯å¦èƒ½è¢«jæ•´é™¤,èƒ½æ•´é™¤å°±ä¸æ˜¯è´¨æ•° 
 			{
 				f =0;
 				break;

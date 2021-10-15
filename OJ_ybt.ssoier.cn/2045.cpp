@@ -12,13 +12,13 @@ int main()
 	a[0][n-1]=1;
 	while(t<n*n)
 	{
-		while(y<n-1 && !a[y+1][x])//向下
+		while(y<n-1 && !a[y+1][x])//鍚戜笅
 			a[++y][x]=t++;
-		while(x-1>=0 && !a[y][x-1])//向左 
+		while(x-1>=0 && !a[y][x-1])//鍚戝乏 
 			a[y][--x]=t++;
-		while(y-1>=0 && !a[y-1][x])//向上 
+		while(y-1>=0 && !a[y-1][x])//鍚戜笂 
 			a[--y][x]=t++;
-		while(x<n-1 && !a[y][x+1])//向右 
+		while(x<n-1 && !a[y][x+1])//鍚戝彸 
 			a[y][++x]=t++;
 	}
 

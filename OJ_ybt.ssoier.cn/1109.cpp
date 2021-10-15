@@ -7,9 +7,9 @@ int main()
 	cin >>n>>m;
 	bool light[n+1];
 	memset(light,0,sizeof(light));
-	for(int j=2;j<=m;j++)//Ì×Ïà·´
+	for(int j=2;j<=m;j++)//å¥—ç›¸å
 	{
-		for(int k=j;k<=n;k++)//Ñ­»·¼ì²â±¶Êý
+		for(int k=j;k<=n;k++)//å¾ªçŽ¯æ£€æµ‹å€æ•°
 		{
 			if(k%j==0)
 			{
@@ -17,7 +17,7 @@ int main()
 			}
 		}
 	}
-	for(int i=1;i<=n;i++)//Êä³ö
+	for(int i=1;i<=n;i++)//è¾“å‡º
 	{
 		if(light[i]==0)
 		{

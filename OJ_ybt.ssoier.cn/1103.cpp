@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 	int a[10],h,s=0;
-	for(int i=0;i<10;i++)//ÊäÈë 
+	for(int i=0;i<10;i++)//è¾“å…¥ 
 	{
 		cin >>a[i];
 	}

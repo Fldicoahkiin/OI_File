@@ -7,7 +7,7 @@ int main()
 	int n;
 	cin >>n;
 	int a[n];
-	for(int i=0;i<=n-1;i++)//ÊäÈë 
+	for(int i=0;i<=n-1;i++)//è¯»å–
 	{
 		cin >>a[i];
 	}

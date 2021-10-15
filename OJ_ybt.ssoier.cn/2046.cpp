@@ -1,5 +1,7 @@
 #include <iostream>
-#include <cstdio>
+#include <cstring>
+//#include <cstdio>
+
 using namespace std;
 
 int main()
@@ -7,7 +9,7 @@ int main()
 	char ori[500];
 	char a,b;
 	
-	gets(ori);//ÊäÈë
+	gets(ori);//è¾“å…¥
 
 	cin >>a>>b;
 

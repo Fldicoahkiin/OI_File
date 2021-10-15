@@ -3,7 +3,7 @@
 
 using namespace std;
 
-bool panss(int a)//ÅĞ¶ÏÊÇ·ñÎªËØÊı 
+bool panss(int a)//åˆ¤æ–­æ˜¯å¦ä¸ºç´ æ•° 
 {
 	for(int j=2;j<=sqrt(a);j++)
 		if(a%j==0)

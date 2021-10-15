@@ -2,7 +2,7 @@
 #include <cmath>
 using namespace std;
 
-bool panss(int a)//ÅĞ¶ÏËØÊı
+bool panss(int a)//åˆ¤æ–­ç´ æ•°
 {
 	for(int j=2;j<sqrt(a);j++)
 	{

@@ -6,11 +6,11 @@ int main()
 	int n;
 	cin >>n;
 	int sq[n][n];
-	for(int i=0;i<n;i++)//ÊäÈë 
+	for(int i=0;i<n;i++)//è¾“å…¥ 
 		for(int j=0;j<n;j++)
 			cin >>sq[i][j];
 			
-	int x1=0,x2=n-1,y=0;//¸³Öµ
+	int x1=0,x2=n-1,y=0;//èµ‹å€¼
 	for(int y=0;y<n;y++)
 	{
 		if(x1!=x2)
@@ -28,7 +28,7 @@ int main()
 		}
 	}
 	
-	for(int i=0;i<n;i++)//Êä³ö
+	for(int i=0;i<n;i++)//è¾“å‡º
 	{
 		for(int j=0;j<n;j++)
 		{

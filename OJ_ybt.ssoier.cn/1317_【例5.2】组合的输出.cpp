@@ -34,9 +34,9 @@ void search(int k)
 			}
 			else
 			{
-				search(k+1);//µÝ¹é 
+				search(k+1);//é€’å½’ 
 			}
-			visit[i]=0;//»ØËÝ
+			visit[i]=0;//å›žæº¯
 		}
 	}
 	return;

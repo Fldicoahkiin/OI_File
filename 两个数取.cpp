@@ -5,9 +5,9 @@ using namespace std;
 int main()
 {
 	int a,b;
-	cout <<"ÇëÊäÈëµÚÒ»¸öÊı:"; 
+	cout <<"è¯·è¾“å…¥ç¬¬ä¸€ä¸ªæ•°:"; 
 	cin >> a;
-	cout <<"ÇëÊäÈëµÚ¶ş¸öÊı:";
+	cout <<"è¯·è¾“å…¥ç¬¬äºŒä¸ªæ•°:";
 	cin >> b;
 	return 0; 
 }

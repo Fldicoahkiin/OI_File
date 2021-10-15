@@ -8,7 +8,7 @@ int main()
 	int n,m;
 	cin >>n>>m;
 
-	for(int i=0;i<n;i++)//ÊäÈë
+	for(int i=0;i<n;i++)//è¾“å…¥
 		for(int j=0;j<m;j++)
 		{
 			cin>>pic[i][j];

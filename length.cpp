@@ -6,11 +6,11 @@ using namespace std;
 int main()
 {
     int a;
-    cout << "ÇëÊäÈëÄãµÄ³¤¶È:"; 
+    cout << "è¯·è¾“å…¥ä½ çš„é•¿åº¦:"; 
     cin >> a;
     if ( a < 20 )
     {
-    	cout << "ÎÒµÄ¶¼ÓĞ" << a*10 << "cm£¬" << "ÄãÕæ¶Ì" << endl;
+    	cout << "æˆ‘çš„éƒ½æœ‰" << a*10 << "cmï¼Œ" << "ä½ çœŸçŸ­" << endl;
     }
     else
     {

@@ -9,7 +9,7 @@ int main()
 	int n,x;
 	cin >>n;
 
-	for(int i=1;i<=n;i++)//¸³Öµ 
+	for(int i=1;i<=n;i++)//èµ‹å€¼ 
 	{
 		for(x=1;x<=i;x++)
 		{
@@ -21,7 +21,7 @@ int main()
 		}
 	}
 
-	for(int j=1;j<=n;j++)//Êä³ö
+	for(int j=1;j<=n;j++)//è¾“å‡º
 	{
 		for(int k=1;k<=j;k++)
 		{

@@ -13,14 +13,14 @@ int main()
 		if(x>max)
 		{
 			max = x;
-			//cout <<"max�޸�="<<max<<endl;
+			//cout <<"max修改="<<max<<endl;
 		}
 		if(x<min)
 		{
 			min = x;
-			//cout <<"min�޸�="<<min<<endl;
+			//cout <<"min修改="<<min<<endl;
 		}
-		//cout <<"///////////////ѭ��һ�ַָ�//////////////"<<endl;
+		//cout <<"///////////////循环一轮分割//////////////"<<endl;
 	}
 	cout <<max-min<<endl;
 	return 0;

@@ -22,11 +22,11 @@ void search(int x,int y)
 
 int main()
 {
-	//ÎÄ¼þÖØ¶¨Ïò
+	//æ–‡ä»¶é‡å®šå‘
 	freopen("1212_LETTERS.in","r",stdin);
 	freopen("1212_LETTERS.out","w",stdout);
 
-	cin >>R>>S;//ÊäÈë
+	cin >>R>>S;//è¾“å…¥
 	char temp;
 	for(int i=0;i++;i<=R)
 	{

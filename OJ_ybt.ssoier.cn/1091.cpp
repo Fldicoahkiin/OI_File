@@ -11,7 +11,7 @@ int jc(int a)
 		//cout <<"j="<<j<<endl;
 		r = r*j;
 		//cout <<"r="<<r<<endl;
-		//cout <<"///jc½áÊø//"<<endl;
+		//cout <<"///jcç»“æŸ//"<<endl;
 	}
 	return r;
 }

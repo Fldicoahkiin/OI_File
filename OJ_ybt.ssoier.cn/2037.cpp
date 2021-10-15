@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstring>
 
 using namespace std;
 
@@ -6,15 +7,15 @@ int main()
 {
 	int N,M;
 	cin>>N>>M;
-	bool a[N+1];//1´ú±íÈ¦ÄÚÓĞ
-	memset(a,1,sizeof(a));//0´ú±íÈ¦ÄÚÎŞ
-	a[0]=0;//Ã»ÓĞÕâ¸öÈË
+	bool a[N+1];//1ä»£è¡¨åœˆå†…æœ‰
+	memset(a,1,sizeof(a));//0ä»£è¡¨åœˆå†…æ— 
+	a[0]=0;//æ²¡æœ‰è¿™ä¸ªäºº
 	int survivor=N;
 	for(int i=1,j=0;survivor;i++)
 	{
-		if(a[i])//ÊıÊıÊıµ½ÁËÕâ¸öÈË  »¹ÔÚ
+		if(a[i])//æ•°æ•°æ•°åˆ°äº†è¿™ä¸ªäºº  è¿˜åœ¨
 		{
-			j++;//»îÈË²ÅÄÜÊıÊı
+			j++;//æ´»äººæ‰èƒ½æ•°æ•°
 			if(j==M)
 			{
  				cout<<i<<" ";

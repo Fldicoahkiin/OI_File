@@ -7,18 +7,18 @@ int main()
 	int n;
 	cin >>n;
 	int a[n];
-	for(int i=0;i<=n;i++)//³õÊ¼»¯Êý×é
+	for(int i=0;i<=n;i++)//åˆå§‹åŒ–æ•°ç»„
 	{
 		a[i]=1;
 	}
-	//for(int i=0;i<=(n-1);i++)//Êä³ö
+	//for(int i=0;i<=(n-1);i++)//è¾“å‡º
 	//{
 	//	cout <<a[i]<<" ";
 	//}
 	//cout <<endl;
-	for(int j=2;j<=n;j++)//Ì×Ïà·´
+	for(int j=2;j<=n;j++)//å¥—ç›¸å
 	{
-		for(int k=j;k<=n;k++)//Ñ­»·¼ì²â±¶Êý
+		for(int k=j;k<=n;k++)//å¾ªçŽ¯æ£€æµ‹å€æ•°
 		{
 			if(k%j==0)
 			{
@@ -26,7 +26,7 @@ int main()
 			}
 		}
 	}
-	for(int i=1;i<=n;i++)//Êä³ö
+	for(int i=1;i<=n;i++)//è¾“å‡º
 	{
 		if(a[i]==1)
 		{

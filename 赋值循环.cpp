@@ -7,11 +7,11 @@ long b;
 
 int main()
 {
-	cout << "第一个数:";
+	cout << "绗竴涓暟:";
 	cin >> a;
-	cout << "第二个数:";
+	cout << "绗簩涓暟:";
 	cin >> b;
-	cout << "RUN!!!!!!!!!!！！！！！！！！！！" <<endl;
+	cout << "RUN!!!!!!!!!!锛侊紒锛侊紒锛侊紒锛侊紒锛侊紒" <<endl;
 	while(1)
 	{
 		a = a + b;

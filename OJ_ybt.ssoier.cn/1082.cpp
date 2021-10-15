@@ -39,9 +39,9 @@ int main()
     	//cout <<"i="<<i<<endl;
         a=a*10;
         //cout <<"a:"<<a<<endl;
-        temp=a/b;//tempģ��洢��iλС��
+        temp=a/b;//temp模拟存储第i位小数
         //cout <<"temp:"<<temp<<endl;
-        a=a%b; //��ȡ��һλ 
+        a=a%b; //提取下一位 
         //cout <<"a2:"<<a<<endl;
         //cout <<"///////////////////////////////"<<endl;
     }
