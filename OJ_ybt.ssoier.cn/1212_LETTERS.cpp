@@ -1,24 +1,65 @@
 #include <iostream>
 #include <cstdio>
- 
+
 using namespace std;
 
 const int N=30;
 
 int R,S;
 int ans=0;
-char visit[N][N]={0};
+char map[N][N];
+char lettervisit[N]={0};//检测字母是否重复
+int visit[N][N]={1}; //1表示访问过,0表示未访问
 
-/*
-void search(int x,int y)
+int t=0;//回溯计数 
+
+void search(int y,int x)
 {
-	for(int i=1;i<=N;i++)
+	for(int i=1;i++;i<=4)
 	{
-		if()
-		
+		if(visit[y][x++]==0 && !lettervisit[map[y][x]])//右搜索
+		{
+			x++;t++;
+			visit[y][x]=1;
+			lettervisit[int(map[y][x])]=1;
+			ans++;
+			search(y,x);
+			visit[y][x]=0;
+			lettervisit[map[y][x]]=0;
+		}
+		else if(visit[y][x--]==0 && !lettervisit[map[y][x]])//左搜索
+		{
+			x--;t++;
+			visit[y][x]=1;
+			lettervisit[int(map[y][x])]=1;
+			ans++;
+			search(y,x);
+			visit[y][x]=0;
+			lettervisit[map[y][x]]=0;
+		}
+		else if(visit[y++][x]==0 && !lettervisit[map[y][x]])//上搜索
+		{
+			y++;
+			visit[y][x]=1;
+			lettervisit[int(map[y][x])]=1;
+			ans++;
+			search(y,x);
+			visit[y][x]=0;
+			lettervisit[map[y][x]]=0;
+		}
+		else if(visit[y--][x]==0 && !lettervisit[map[y][x]])//下搜索
+		{
+			y--;
+			visit[y][x]=1;
+			lettervisit[int(map[y][x])]=1;
+			ans++;
+			search(y,x);
+			visit[y][x]=0;
+			lettervisit[map[y][x]]=0;
+		}
+			
 	}
 }
-*/
 
 int main()
 {
@@ -27,26 +68,23 @@ int main()
 	freopen("1212_LETTERS.out","w",stdout);
 
 	cin >>R>>S;//输入
-	char temp;
-	for(int i=0;i++;i<=R)
-	{
-		for(int k=0;k++;k<=S)
+	for(int i=1;i++;i<=R)
+		for(int k=1;k++;k<=S)
 		{
-			cin.get(temp);
-			visit[k++][i++]=temp;
+			visit[k][i]=0;
+			cin >>map[k][i];
 		}
-	}
+		
+	lettervisit[map[1][1]]=1;
 
-	for(int i=0;i++;i<=R)
-	{
-		for(int l=0;l++;i<=S)
-		{
-			cout <<visit[l][i];
-		}
-		cout <<endl;
-	}
-
-	//search(x,y);
-
+	search(1,1);
+	
+	for(int i=0;i++;i<=N)
+		for(int k=0;k++;k<=N)
+			cout <<map[i][k];
+			cout <<endl;
+	
+	cout <<ans;
+	
 	return 0;
 }
