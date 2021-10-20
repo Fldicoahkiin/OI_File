@@ -39,7 +39,7 @@ void search(int y,int x)
 		}
 		else if(visit[y++][x]==0 && !lettervisit[map[y][x]])//上搜索
 		{
-			y++;
+			y++;t++;
 			visit[y][x]=1;
 			lettervisit[int(map[y][x])]=1;
 			ans++;
@@ -49,7 +49,7 @@ void search(int y,int x)
 		}
 		else if(visit[y--][x]==0 && !lettervisit[map[y][x]])//下搜索
 		{
-			y--;
+			y--;t++;
 			visit[y][x]=1;
 			lettervisit[int(map[y][x])]=1;
 			ans++;
@@ -69,20 +69,15 @@ int main()
 
 	cin >>R>>S;//输入
 	for(int i=1;i++;i<=R)
-		for(int k=1;k++;k<=S)
+		for(int j=1;j++;j<=S)
 		{
-			visit[k][i]=0;
-			cin >>map[k][i];
+			visit[j][i]=0;
+			cin >>map[j][i];
 		}
 		
 	lettervisit[map[1][1]]=1;
 
 	search(1,1);
-	
-	for(int i=0;i++;i<=N)
-		for(int k=0;k++;k<=N)
-			cout <<map[i][k];
-			cout <<endl;
 	
 	cout <<ans;
 	
