@@ -14,6 +14,7 @@ int f[5][2]={{0,0},{0,1},{1,0},{-1,0},{0,-1}}; // 四个方向
 
 void printmap()
 {
+	cout <<"MAP:"<<endl;
 	for(int i=0;i<=R;i++)
 	{
 		for(int j=0;j<=S;j++)
@@ -27,6 +28,7 @@ void printmap()
 
 void printvisit()
 {
+	cout <<"VISIT:"<<endl;
 	for(int i=0;i<=R;i++)
 	{
 		for(int j=0;j<=S;j++)
@@ -40,6 +42,7 @@ void printvisit()
 
 void printlettervisit()
 {
+	cout <<"LetterVISIT:"<<endl;
 	for(int i=0;i<=N;i++)
 	{
 		cout <<lettervisit[i];
@@ -47,31 +50,23 @@ void printlettervisit()
 	cout<<endl;
 }
 
-bool ifcan(int x,int y)
-{
-	return x>0 && y>0 && x<=R && y<=S && lettervisit[map[x][y]]==0 && visit[x][y]==0;  	
-}
-
 void dfs(int x,int y,int sum)
 {
-//	ans = max(ans,sum);
-//	if(ans<sum)
-//	{
-//		ans = sum;
-//	}
-	ans = ans<sum ? sum : ans;
+	ans = max(ans,sum);
 	for(int i=1;i<=4;i++)
 	{
 		int xx = x + f[i][0];
 		int yy = y + f[i][1];
-		if(ifcan(xx,yy))
+		if(xx>0 && yy>0 && xx<=R && yy<=S && lettervisit[map[xx][yy]]==0 && visit[xx][yy]==0)
 		{
+			printmap();
 			printvisit();
+
 			visit[xx][yy] = sum+1;
-			lettervisit[map[xx][yy]] = true;
+			lettervisit[map[xx][yy]] = 1;
 			dfs(xx,yy,sum+1);
-			visit[xx][yy] = false;
-			lettervisit[map[xx][yy]] = false;				
+			visit[xx][yy] = 0;
+			lettervisit[map[xx][yy]] = 0;				
 		}
 	}
 	return;
@@ -102,13 +97,7 @@ int main()
 	visit[1][1] = true;
 	dfs(1,1,1);
 	
-	cout<<ans;
-	
-	printmap();
+	cout<<"Answer:"<<ans<<endl;
 
-//	printvisit();
-	
-//	printlettervisit();
-	
 	return 0;
 }
