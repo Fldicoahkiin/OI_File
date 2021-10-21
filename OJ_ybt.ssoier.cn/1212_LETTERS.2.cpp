@@ -1,3 +1,4 @@
+//80%
 #include <iostream>
 #include <cstdio>
 
@@ -7,7 +8,7 @@ const int N=30;
 
 char map[N][N];
 int ans,R,S;
-int visit[N][N]={0},lettervisit[N]={0};
+int visit[N][N]={0},lettervisit[N];
 
 int f[5][2]={{0,0},{0,1},{1,0},{-1,0},{0,-1}}; // 四个方向
 
@@ -39,7 +40,7 @@ void printvisit()
 
 void printlettervisit()
 {
-	for(int i=0;i<=R;i++)
+	for(int i=0;i<=N;i++)
 	{
 		cout <<lettervisit[i];
 	}
@@ -54,10 +55,11 @@ bool ifcan(int x,int y)
 void dfs(int x,int y,int sum)
 {
 //	ans = max(ans,sum);
-	if(ans<sum)
-	{
-		ans = sum;
-	}
+//	if(ans<sum)
+//	{
+//		ans = sum;
+//	}
+	ans = ans<sum ? sum : ans;
 	for(int i=1;i<=4;i++)
 	{
 		int xx = x + f[i][0];
@@ -104,9 +106,9 @@ int main()
 	
 	printmap();
 
-	printvisit();
+//	printvisit();
 	
-	printlettervisit();
+//	printlettervisit();
 	
 	return 0;
 }
