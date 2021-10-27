@@ -66,7 +66,7 @@ int main()
 {
 	//文件重定向
 	freopen("1212_LETTERS.in","r",stdin);
-	freopen("1212_LETTERS.out","w",stdout);
+//	freopen("1212_LETTERS.out","w",stdout);
 
 	cin >>R>>S;//输入
 	for(int i=1;i++;i<=R)

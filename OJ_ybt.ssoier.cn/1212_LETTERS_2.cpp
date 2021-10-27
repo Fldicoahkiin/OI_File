@@ -69,7 +69,6 @@ void dfs(int x,int y,int sum)
 			lettervisit[map[xx][yy]] = 0;				
 		}
 	}
-	return;
 }
 
 int main()

@@ -1,7 +1,21 @@
 {
-    "C_Cpp.errorSquiggles": "Enabled",
-    "files.associations": {
-        "ostream": "cpp",
-        "cstdio": "cpp"
-    }
+  "C_Cpp.errorSquiggles": "Enabled",
+  "files.associations": {
+    "ostream": "cpp",
+    "cstdio": "cpp"
+  },
+  "files.encoding": "utf8",
+  "C_Cpp_Runner.cStandard": "c17",
+  "C_Cpp_Runner.cppStandard": "c++20",
+  "C_Cpp_Runner.warnings": [],
+  "C_Cpp_Runner.compilerArgs": [],
+  "C_Cpp_Runner.includePaths": [],
+  "C_Cpp_Runner.linkerArgs": [],
+  "C_Cpp_Runner.excludeSearch": [],
+  "C_Cpp_Runner.enableWarnings": true,
+  "C_Cpp_Runner.warningsAsError": false,
+  "C_Cpp_Runner.cCompilerPath": "D:\\MinGW\\bin\\gcc.exe",
+  "C_Cpp_Runner.cppCompilerPath": "D:\\MinGW\\bin\\g++.exe",
+  "C_Cpp_Runner.debuggerPath": "D:\\MinGW\\bin\\gdb.exe",
+  "C_Cpp_Runner.makePath": "D:\\MinGW\\bin\\make.exe"
 }
