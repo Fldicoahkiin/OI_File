@@ -32,7 +32,7 @@ void search(int y,int x)
 
 int main()
 {
-	scanf("%d \n %d",&k,&n);//输入 
+	cin >>k>>n;//输入 
 	for(int i=1;i<=k;i++)//循环K次 
 	{
 		pass=0;
