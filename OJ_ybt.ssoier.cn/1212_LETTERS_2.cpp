@@ -1,6 +1,7 @@
 //80%
 #include <iostream>
 #include <cstdio>
+#include <cstring>
 
 using namespace std;
 
@@ -8,16 +9,17 @@ const int N=30;
 
 char map[N][N];
 int ans,R,S;
-int visit[N][N]={0},lettervisit[N];
+int visit[N][N];
+int lettervisit[N];
 
 int f[5][2]={{0,0},{0,1},{1,0},{-1,0},{0,-1}}; // 四个方向
 
 void printmap()
 {
 	cout <<"MAP:"<<endl;
-	for(int i=0;i<=R;i++)
+	for(int i=0;i<=R+1;i++)
 	{
-		for(int j=0;j<=S;j++)
+		for(int j=0;j<=S+1;j++)
 		{
 			cout <<map[i][j];
 		}
@@ -29,9 +31,9 @@ void printmap()
 void printvisit()
 {
 	cout <<"VISIT:"<<endl;
-	for(int i=0;i<=R;i++)
+	for(int i=0;i<=R+1;i++)
 	{
-		for(int j=0;j<=S;j++)
+		for(int j=0;j<=S+1;j++)
 		{
 			cout <<visit[i][j];
 		}
@@ -43,7 +45,7 @@ void printvisit()
 void printlettervisit()
 {
 	cout <<"LetterVISIT:"<<endl;
-	for(int i=0;i<=N;i++)
+	for(int i=0;i<=N*N;i++)
 	{
 		cout <<lettervisit[i];
 	}
@@ -59,14 +61,13 @@ void dfs(int x,int y,int sum)
 		int yy = y + f[i][1];
 		if(xx>0 && yy>0 && xx<=R && yy<=S && lettervisit[map[xx][yy]]==0 && visit[xx][yy]==0)
 		{
-			printmap();
 			printvisit();
-
+			
 			visit[xx][yy] = sum+1;
-			lettervisit[map[xx][yy]] = 1;
+			lettervisit[map[xx][yy]] = 1;printlettervisit();
 			dfs(xx,yy,sum+1);
 			visit[xx][yy] = 0;
-			lettervisit[map[xx][yy]] = 0;				
+			lettervisit[map[xx][yy]] = 0;		
 		}
 	}
 }
