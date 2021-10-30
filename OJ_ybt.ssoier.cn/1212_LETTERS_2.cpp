@@ -45,7 +45,7 @@ void printvisit()
 void printlettervisit()
 {
 	cout <<"LetterVISIT:"<<endl;
-	for(int i=0;i<=N*N;i++)
+	for(int i=0;i<=N;i++)
 	{
 		cout <<lettervisit[i];
 	}
@@ -64,7 +64,7 @@ void dfs(int x,int y,int sum)
 			printvisit();
 			
 			visit[xx][yy] = sum+1;
-			lettervisit[map[xx][yy]] = 1;printlettervisit();
+			lettervisit[map[xx][yy]] = 1;
 			dfs(xx,yy,sum+1);
 			visit[xx][yy] = 0;
 			lettervisit[map[xx][yy]] = 0;		
