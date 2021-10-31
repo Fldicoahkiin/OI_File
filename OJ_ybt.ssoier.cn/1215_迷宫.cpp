@@ -1,50 +1,67 @@
 //未提交
-#include <iostream>
-#include <cstdio>
+//抄的
+#include<iostream>
+#include<cstdio>
+#include<cstring>
 
 using namespace std;
 
-int k;//测试数据的组数k，后面跟着k组输入
-int n;//迷宫的规模是n×n
-char nmap;//一个n×n的矩阵，矩阵中的元素为.或者#
-int ha,la,hb,lb;//描述A处在第ha行, 第la列，B处在第hb行, 第lb列。注意到ha,la,hb,lb全部是从0开始计数的。
+const int maxn=100+10;
 
-int map[101][101]={0};
-int tempmap[101]={0};
+int k,n,ha,la,hb,lb;
+char a[maxn][maxn]={};
+int da[5]={0,1,0,-1};
+int db[5]={1,0,-1,0};
+bool b[maxn][maxn]={};
+int flag=0;
 
-int pass=0;//判断是否到达终点 
-
-void fuckin(int i)//将临时数组转进二维数组Map 
+bool dfs(int x,int y)
 {
-	for(int j=0;j<n;j++)// 
+	if(x==hb&&y==lb)
 	{
-		if(tempmap[j]=='#')
-			map[i][j]=1;//1表示即为已走过或有墙
+		flag=1;
+		return true;
 	}
-	return;
-}
-
-
-void search(int y,int x)
-{
-	
+	for(int i=0;i<4;i++)
+	{	
+		int p=x+da[i];
+		int q=y+db[i];
+		if(a[p][q]=='.'&&b[p][q]==0&&p>=0&&q>=0&&p<n&&q<n)
+		{
+			b[p][q]=1;
+			dfs(p,q);
+		}
+	}
+	return false;	
 }
 
 int main()
 {
-	cin >>k>>n;//输入 
-	for(int i=1;i<=k;i++)//循环K次 
+	cin>>k;
+	while(k!=0)
 	{
-		pass=0;
-		for(int j=0;j<n;j++)
+		k--;
+		cin>>n;
+		flag=0;
+		memset(a,0,sizeof(a));
+		memset(b,0,sizeof(b));
+		for(int i=0;i<n;i++)
 		{
-			gets(tempmap);
-			cin >>ha>>la>>hb>>lb; 
-			fuckin(j);
+			for(int j=0;j<n;j++)
+			{
+				cin>>a[i][j];
+			}
 		}
-		search(ha,la);
-		if(pass) cout<<"YES"<<endl;
-		else cout<<"NO"<<endl; 
+		cin>>ha>>la>>hb>>lb;
+		if(a[ha][la]=='#'||a[hb][lb]=='#')
+		{
+			cout<<"NO"<<endl;
+			continue;
+		}
+		b[ha][la]=1;
+		dfs(ha,la);
+		if(flag==1) cout<<"YES"<<endl;
+		else cout<<"NO"<<endl;
 	}
 	return 0;
 }
