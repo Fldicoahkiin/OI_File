@@ -14,6 +14,9 @@ int visit[N][N]; //1表示访问过,0表示未访问
 
 int t=0,ans=0;
 
+int direct[5][2]={//direct[k][0]表示上下变化，direct[k][1]表示左右变化
+	{0,0},{-1,0},{1,0},{0,-1},{0,1}//分别对应原地，上，下，左，右
+};
 
 void printmap()
 {
@@ -56,53 +59,16 @@ void printlettervisit()
 void dfs(int y,int x)
 {
 	ans=max(ans,t);
-	for(int i=1;i++;i<=4)
+
+	int tempx,tempy;
+	for(int k=1;k++;k<=4)
 	{
-		if(visit[y][x++]==0 && !lettervisit[map[y][x]])//右搜索
+		tempy=y+direct[k][0];
+		tempx=x+direct[k][1];
+		if(tempy>=1 && tempx>=1 )
 		{
-			x++;
-			t++;
-			visit[y][x]=1;
-			lettervisit[int(map[y][x])]=1;
-			ans++;
-			dfs(y,x);
-			visit[y][x]=0;
-			lettervisit[map[y][x]]=0;
+			lettervisit[int(map[tempy][tempx])]=1;
 		}
-		if(visit[y][x--]==0 && !lettervisit[map[y][x]])//左搜索
-		{
-			x--;
-			t++;
-			visit[y][x]=1;
-			lettervisit[int(map[y][x])]=1;
-			ans++;
-			dfs(y,x);
-			visit[y][x]=0;
-			lettervisit[map[y][x]]=0;
-		}
-		if(visit[y++][x]==0 && !lettervisit[map[y][x]])//上搜索
-		{
-			y++;
-			t++;
-			visit[y][x]=1;
-			lettervisit[int(map[y][x])]=1;
-			ans++;
-			dfs(y,x);
-			visit[y][x]=0;
-			lettervisit[map[y][x]]=0;
-		}
-		if(visit[y--][x]==0 && !lettervisit[map[y][x]])//下搜索
-		{
-			y--;
-			t++;
-			visit[y][x]=1;
-			lettervisit[int(map[y][x])]=1;
-			ans++;
-			dfs(y,x);
-			visit[y][x]=0;
-			lettervisit[map[y][x]]=0;
-		}
-			
 	}
 }
 
@@ -120,7 +86,7 @@ int main()
 		}
 	}
 	printmap();
-	
+
 	lettervisit[map[1][1]]=1;
 
 	dfs(1,1);
