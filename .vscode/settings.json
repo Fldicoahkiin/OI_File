@@ -4,7 +4,8 @@
     "ostream": "cpp",
     "cstdio": "cpp",
     "cstring": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "iomanip": "cpp"
   },
   "files.encoding": "utf8",
   "C_Cpp_Runner.cStandard": "c17",

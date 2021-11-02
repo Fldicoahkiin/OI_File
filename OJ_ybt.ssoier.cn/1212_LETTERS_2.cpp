@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cstdio>
 #include <cstring>
+#include <iomanip>
 
 using namespace std;
 
@@ -21,7 +22,7 @@ void printmap()
 	{
 		for(int j=0;j<=S+1;j++)
 		{
-			cout <<map[i][j];
+			cout <<setw(2)<<map[i][j];
 		}
 		cout<<endl;
 	}
@@ -35,7 +36,7 @@ void printvisit()
 	{
 		for(int j=0;j<=S+1;j++)
 		{
-			cout <<visit[i][j];
+			cout <<setw(2)<<visit[i][j];
 		}
 		cout<<endl;
 	}
@@ -61,8 +62,7 @@ void dfs(int x,int y,int sum)
 		int yy = y + f[i][1];
 		if(xx>0 && yy>0 && xx<=R && yy<=S && lettervisit[map[xx][yy]]==0 && visit[xx][yy]==0)
 		{
-			printvisit();
-			
+//			printvisit();		
 			visit[xx][yy] = sum+1;
 			lettervisit[map[xx][yy]] = 1;
 			dfs(xx,yy,sum+1);
@@ -74,7 +74,7 @@ void dfs(int x,int y,int sum)
 
 int main()
 {
-	freopen("1212_LETTERS.in","r",stdin);
+//	freopen("1212_LETTERS.in","r",stdin);
 //	freopen("1212_LETTERS.out","w",stdout);
 	cin>>R>>S;
 	
@@ -94,10 +94,10 @@ int main()
 	}	
 	
 	lettervisit[map[1][1]] = true;
-	visit[1][1] = true;
+	visit[1][1] = 1;
 	dfs(1,1,1);
 	
-	cout<<"Answer:"<<ans<<endl;
+	cout <<ans<<endl;
 
 	return 0;
 }
