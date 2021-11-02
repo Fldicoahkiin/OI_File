@@ -1,4 +1,4 @@
-//草你吗,10%
+//草你吗,不写了,10%
 #include <iostream>
 #include <cstdio>
 #include <cstring>
@@ -49,6 +49,16 @@ void printvisit()
 	cout <<endl; 
 }
 
+void printlettervisit()
+{
+	cout <<"LetterVISIT:"<<endl;
+	for(int i=0;i<=N;i++)
+	{
+		cout <<setw(2)<<lettervisit[i];
+	}
+	cout<<endl;
+}
+
 void dfs(int y,int x)
 {
 	ans=max(ans,t);
@@ -59,11 +69,12 @@ void dfs(int y,int x)
 		int tempx=x+direct[k][1];
 
 //		if(tempy>=1 && tempx>=1 && tempy<=R && tempx<=S && lettervisit[int(map[tempy][tempx])]==0 && visit[tempy][tempx]==0)
-		if(lettervisit[map[tempy][tempx]-'A']==0 && visit[tempy][tempx]==0)
+		if(lettervisit[map[tempy][tempx]-64]==0 && visit[tempy][tempx]==0)
 		{
-			lettervisit[map[tempy][tempx]-'A']=1;
+			lettervisit[map[tempy][tempx]-64]=1;
 			visit[tempy][tempx]=++t;
-//			printvisit();
+			printvisit();
+			printlettervisit();
 			dfs(tempy,tempx);
 			lettervisit[map[tempy][tempx]]=0;
 			visit[tempy][tempx]=0;
@@ -73,7 +84,7 @@ void dfs(int y,int x)
 
 int main()
 {
-//	freopen("1212_LETTERS.in","r",stdin);
+	freopen("1212_LETTERS.in","r",stdin);
 //	freopen("1212_LETTERS.out","w",stdout);
 
 	memset(visit,-1,sizeof(visit));
@@ -88,7 +99,7 @@ int main()
 		}
 	}
 	
-	lettervisit[map[1][1]-'A']=1;
+	lettervisit[map[1][1]-64]=1;
 	visit[1][1]=1;
 //	printmap();
 //	printvisit();
