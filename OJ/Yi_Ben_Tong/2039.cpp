@@ -7,7 +7,7 @@ int main()
 {
 	int n;
 	cin >>n;
-	int a[n];
+	int a[20];
 	for(int i=0;i<=n-1;i++)//读取
 	{
 		cin >>a[i];
