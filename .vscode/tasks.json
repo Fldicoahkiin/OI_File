@@ -8,7 +8,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "debug.exe"
+                "&{fileDirname}\\debug.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
