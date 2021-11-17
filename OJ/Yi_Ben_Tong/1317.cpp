@@ -1,3 +1,4 @@
+//1317：【例5.2】组合的输出
 #include <iostream>
 #include <iomanip>
 #include <cstdio>

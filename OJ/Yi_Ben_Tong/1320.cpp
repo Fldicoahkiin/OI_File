@@ -1,3 +1,4 @@
+//1320：【例6.2】均分纸牌(Noip2002)
 #include <iostream>
 #include <cstdio>
 
