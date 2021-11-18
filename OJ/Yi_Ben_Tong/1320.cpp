@@ -7,7 +7,7 @@ using namespace std;
 int n;
 int a[102];
 int sum=0,average;
-int t=0;
+int t=0;//计数
 
 int main()
 {
@@ -23,19 +23,20 @@ int main()
 
 	average=sum/n;
 
-	for(int i=0;i<n;i++)
+	for(int i=0;i<n;i++)//将a数组中的牌数转化为与平均数的差值
 	{
 		a[i]-=average;
 	}
+
 	for(int i=0;i<n-1;i++)
 	{
-		if(a[i]==0)
+		if(a[i]==0)//如果已到达平均数，则i++进行下一个数的判断
 		{
 			continue;
 		}
 		else
 		{
-			a[i+1]+=a[i];
+			a[i+1]+=a[i];//放牌
 			t++;
 		}
 	}
