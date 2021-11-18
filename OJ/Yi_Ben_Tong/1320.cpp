@@ -26,6 +26,10 @@ int main()
 //copy
 	for(int i=1;i<n;i++)
 	{
+		a[i]-=average;
+	}
+	for(int i=1;i<n;i++)
+	{
 		if(a[i]!=0)
 		{
 			a[i+1]=a[i]+a[i+1];
