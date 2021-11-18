@@ -15,7 +15,7 @@ int main()
 //	freopen("1320.out", "w" , stdout); 
 
 	cin >>n;
-	for(int i=1;i<n;i++)
+	for(int i=0;i<n;i++)
 	{
 		cin >>a[i]; 
 		sum += a[i];
@@ -24,24 +24,22 @@ int main()
 	average=sum/n;
 
 //copy
-	for(int i=1;i<n;i++)
+	for(int i=0;i<n;i++)
 	{
 		a[i]-=average;
 	}
-	for(int i=1;i<n;i++)
+	for(int i=0;i<n-1;i++)
 	{
-		if(a[i]!=0)
-		{
-			a[i+1]=a[i]+a[i+1];
-			a[i]==0;
-			t++;
-		}
-		else
+		if(a[i]==0)
 		{
 			continue;
 		}
+		else
+		{
+			a[i+1]+=a[i];
+			t++;
+		}
 	}
-
 	cout <<t;
 	return 0;
 }
