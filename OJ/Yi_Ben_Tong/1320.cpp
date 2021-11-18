@@ -23,7 +23,6 @@ int main()
 
 	average=sum/n;
 
-//copy
 	for(int i=0;i<n;i++)
 	{
 		a[i]-=average;
@@ -40,6 +39,7 @@ int main()
 			t++;
 		}
 	}
+
 	cout <<t;
 	return 0;
 }
