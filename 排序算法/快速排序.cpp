@@ -12,7 +12,7 @@ void qsort(int a[],int L,int R)
 	{
 		while(a[i]<mid)i++;
 		while(a[j]>mid)j--;
-		if(i<=j)//½»»» 
+		if(i<=j)//äº¤æ¢ 
 		{
 			temp=a[i];a[i]=a[j];a[j]=temp;
 			i++;j--;
