@@ -1,4 +1,3 @@
-//别问，问就是抄的，抄的都还跑不起来，我是沙毕
 #include <iostream>
 #include <cstdio>
 
@@ -8,6 +7,7 @@ using namespace std;
 
 int a[MAXN],r[MAXN];
 
+//别问，问就是抄的，抄的都还跑不起来，我是沙毕
 void msort(int s,int t)
 {
 	if(s==t) return;
