@@ -1,3 +1,7 @@
+/**
+ * 抄的，例1
+ */
+
 #include<iostream>
 #include<vector>
 

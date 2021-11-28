@@ -5,59 +5,41 @@ using namespace std;
 
 #define MAXN 1000
 
-int a[MAXN],r[MAXN];
-
-//别问，问就是抄的，抄的都还跑不起来，我是沙毕
-void msort(int s,int t)
+void marge(int a[],int l_a,int r_a,int b[],int l_b,int r_b)//合并
 {
-	if(s==t) return;
-	int mid=(s+t)/2;
-	msort(s,mid);
-	msort(mid+1,t);
-	int i=s,j=mid+1,k=s;
+	int i,c[MAXN];
+	int mid_a=a[(l_a+r_a)/2];
+	int mid_b=b[(l_b+r_b)/2];
+	while(i<=mid_a)
+	{
 
-	while(i<=mid && j<=t)
-	{
-		if(a[i]<=a[j])
-		{
-			r[k]=a[i];k++;i++;
-		}
-		else
-		{
-			r[k]=a[j];k++;j++;
-		}
-	}
-
-	while(i<=mid)
-	{
-		r[k]=a[i];k++;i++;
-	}
-	while(j<=t)
-	{
-		r[k]=a[j];k++;j++;
-	}
-	for(int i=s;i<=t;i++)
-	{
-		a[i]=r[i];
 	}
 }
+
+void marge_sort(int a[],int l,int r)//分离+合并
+{
+	
+}
+
 
 int main()
 {
 	freopen("number.in" ,"r" ,stdin);
 //	freopen("number.out" ,"w" ,stdout);
-	int n;
+	int n,value[MAXN];
 	cin >>n;
+	cout <<n<<endl<<"前:";
 	for(int i=0;i<n;i++)
 	{
-		cin >>a[i];
-		cout <<a[i]<<" ";
-	}cout<<"-END"<<endl;
-	
-	msort(a[0],a[n-1]);
+		cin >>value[i];
+		cout <<value[i]<<" ";
+	}cout<<endl<<"后:";
+
+//	marge_sort(value,0,n-1);
+
 	for(int i=0;i<n;i++)
 	{
-		cout <<a[i]<<" ";
+		cout <<value[i]<<" ";
 	}
 	return 0;
 }
