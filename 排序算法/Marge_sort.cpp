@@ -15,7 +15,7 @@ void msort(int s,int t)
 	msort(s,mid);
 	msort(mid+1,t);
 	int i=s,j=mid+1,k=s;
-	
+
 	while(i<=mid && j<=t)
 	{
 		if(a[i]<=a[j])
@@ -27,11 +27,11 @@ void msort(int s,int t)
 			r[k]=a[j];k++;j++;
 		}
 	}
-	
+
 	while(i<=mid)
 	{
 		r[k]=a[i];k++;i++;
-	} 
+	}
 	while(j<=t)
 	{
 		r[k]=a[j];k++;j++;
@@ -51,15 +51,13 @@ int main()
 	for(int i=0;i<n;i++)
 	{
 		cin >>a[i];
-	}
-	for(int i=0;i<n;i++)
-	{
 		cout <<a[i]<<" ";
 	}cout<<"-END"<<endl;
+	
 	msort(a[0],a[n-1]);
 	for(int i=0;i<n;i++)
 	{
 		cout <<a[i]<<" ";
 	}
 	return 0;
-} 
+}
