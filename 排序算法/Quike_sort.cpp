@@ -13,7 +13,7 @@ void qsort(int a[],int L,int R)
 	{
 		while(a[i]<mid)i++;
 		while(a[j]>mid)j--;
-		if(i<=j)//äº¤æ¢
+		if(i<=j)//½»»»
 		{
 			temp=a[i];a[i]=a[j];a[j]=temp;
 			i++;j--;
@@ -25,7 +25,7 @@ void qsort(int a[],int L,int R)
 	{
 		while(a[i]<mid)i++;
 		while(a[j]>mid)j--;
-		if(i<=j)//äº¤æ¢
+		if(i<=j)//½»»»
 		{
 			temp=a[i];a[i]=a[j];a[j]=temp;
 			i++;j--;
@@ -43,12 +43,12 @@ int main()
 
 	int n,value[MAXN];
 	cin >>n;
-	cout <<n<<"ä¸ªæ•°æŽ’åº"<<endl<<"å‰:";
+	cout <<n<<"¸öÊýÅÅÐò"<<endl<<"Ç°:";
 	for(int i=0;i<n;i++)
 	{
 		cin >>value[i];
 		cout <<value[i]<<" ";
-	}cout <<endl<<"åŽ:";
+	}cout <<endl<<"ºó:";
 
 	qsort(value,0,n-1);
 

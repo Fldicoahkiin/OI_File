@@ -1,45 +1,72 @@
 #include <iostream>
+#include <iomanip>
 #include <cstdio>
-
-using namespace std;
 
 #define MAXN 1000
 
-void marge(int a[],int l_a,int r_a,int b[],int l_b,int r_b)//åˆå¹¶
+using namespace std;
+
+void merge(int a[],int left,int mid,int right)//ºÏ²¢
 {
-	int i,c[MAXN];
-	int mid_a=a[(l_a+r_a)/2];
-	int mid_b=b[(l_b+r_b)/2];
-	while(i<=mid_a)
+	int Temp[MAXN];
+	int i=left,j=mid+1;
+	int k=0;
+
+	while(i<=mid && j<=right)
 	{
-
+		if(a[i]<=a[j])
+		{
+			Temp[k++]=a[i++];
+		}
+		else
+		{
+			Temp[k++]=a[j++];
+		}
 	}
-}
 
-void marge_sort(int a[],int l,int r)//åˆ†ç¦»+åˆå¹¶
+	while(i<=mid)
+		Temp[k++]=a[i++];
+
+	while(j<=right)
+		Temp[k++]=a[j++];
+
+	for(int i=0;i<k;i++)
+		a[i+left]=Temp[i];
+
+	return;
+}
+void merge_sort(int a[],int left,int right)//·ÖÀë+ºÏ²¢(Ì×ÓÃmerge)
 {
-	
+	int mid=(left+right)/2;
+
+	if(left<mid)//ºÏ²¢×ó±ß
+		merge_sort(a,left,mid);
+
+	if(mid+1<right)//ºÏ²¢ÓÒ±ß
+		merge_sort(a,mid+1,right);
+
+	merge(a,left,mid,right);//ºÏ²¢×óÓÒÁ½±ß
+
+	return;
 }
-
-
 int main()
 {
-	freopen("number.in" ,"r" ,stdin);
-//	freopen("number.out" ,"w" ,stdout);
-	int n,value[MAXN];
-	cin >>n;
-	cout <<n<<endl<<"å‰:";
-	for(int i=0;i<n;i++)
-	{
-		cin >>value[i];
-		cout <<value[i]<<" ";
-	}cout<<endl<<"å:";
+	freopen("number.in","r",stdin);
 
-//	marge_sort(value,0,n-1);
+	int n;int value[MAXN];
 
-	for(int i=0;i<n;i++)
+	cin>>n;cout<<"n="<<n<<endl<<"Ç°:";
+	for(int i=1;i<=n;i++)
 	{
-		cout <<value[i]<<" ";
+		cin>>value[i];
+		cout<<setw(3)<<value[i];
+	}cout <<endl<<"ºó:";
+
+	merge_sort(value,1,n);
+
+	for(int i=1;i<=n;i++)
+	{
+		cout<<setw(3)<<value[i];
 	}
 	return 0;
 }
