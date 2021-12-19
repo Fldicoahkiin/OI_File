@@ -1,4 +1,4 @@
-//1319ï¼šã€ä¾‹6.1ã€‘æ’é˜Ÿæ¥æ°´
+//1319£º¡¾Àı6.1¡¿ÅÅ¶Ó½ÓË®
 #include <iostream>
 #include <cstdio>
 #include <algorithm>
@@ -24,36 +24,37 @@ bool cmp(const list &a,const list &b)
 	if(a.value == b.value)
 		return a.timelist < b.timelist;
 	else
-		return a.value < b.value; 
+		return a.value < b.value;
 }
 
 int main()
 {
 //	freopen("1319.in" ,"r",stdin);
-	
+
 	cin >>n;
-	
+
 	for(int i=1;i<=n;i++)
 	{
 		cin >>a[i].value;
 		a[i].timelist=i;
 	}
+	
 	sort(a+1,a+n+1,cmp);
 
 	for(int i=1;i<=n;i++)
 	{
 		cout <<a[i].timelist<<" ";
 	}
-	
+
 	cout <<endl;
-	
-	//è®¡ç®—æ—¶é—´ 
+
+	//¼ÆËãÊ±¼ä
 	for(int i=1;i<=n;i++)
 	{
 		Time+=(n-i)*a[i].value;
 	}
-	
+
 	cout <<fixed<<setprecision(2)<<Time/n<<endl;
-	
+
 	return 0;
 }

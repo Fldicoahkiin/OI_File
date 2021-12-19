@@ -40,7 +40,7 @@ void printvisit()
 		}
 		cout<<endl;
 	}
-	cout <<endl; 
+	cout <<endl;
 }
 
 void printlettervisit()
@@ -62,12 +62,12 @@ void dfs(int x,int y,int sum)
 		int yy = y + f[i][1];
 		if(xx>0 && yy>0 && xx<=R && yy<=S && lettervisit[map[xx][yy]]==0 && visit[xx][yy]==0)
 		{
-//			printvisit();		
+//			printvisit();
 			visit[xx][yy] = sum+1;
 			lettervisit[map[xx][yy]] = 1;
 			dfs(xx,yy,sum+1);
 			visit[xx][yy] = 0;
-			lettervisit[map[xx][yy]] = 0;		
+			lettervisit[map[xx][yy]] = 0;
 		}
 	}
 }
@@ -76,13 +76,16 @@ int main()
 {
 //	freopen("1212_LETTERS.in","r",stdin);
 //	freopen("1212_LETTERS.out","w",stdout);
+
 	cin>>R>>S;
 	
-//	for(int i=0;i<=R;i++)
-//		for(int j=0;j<=S;j++)
-//			char tmp;
-//			cin>>tmp;
-//			map[i][j] = tmp - 'A';
+	/**
+	for(int i=0;i<=R;i++)
+		for(int j=0;j<=S;j++)
+			char tmp;
+			cin>>tmp;
+			map[i][j] = tmp - 'A';
+	*/
 
 	for(int i=1;i<=R;i++)
 	{
@@ -91,12 +94,12 @@ int main()
 			visit[i][j]=0;
 			cin>>map[i][j];
 		}
-	}	
-	
+	}
+
 	lettervisit[map[1][1]] = true;
 	visit[1][1] = 1;
 	dfs(1,1,1);
-	
+
 	cout <<ans<<endl;
 
 	return 0;
