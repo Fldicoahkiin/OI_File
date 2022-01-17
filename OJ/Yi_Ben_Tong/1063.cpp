@@ -1,7 +1,10 @@
+/**
+ * 1063：最大跨度值
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1063
+ */
 #include <iostream>
-
 using namespace std;
-
 int main()
 {
 	int n,x,min=10001,max=0;

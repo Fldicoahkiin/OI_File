@@ -1,3 +1,8 @@
+/**
+ * 1153：绝对素数
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1153
+ */
 #include <iostream>
 #include <cmath>
 using namespace std;

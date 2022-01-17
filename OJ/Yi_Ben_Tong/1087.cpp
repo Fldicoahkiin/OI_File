@@ -1,5 +1,9 @@
+/**
+ * 1087：级数求和
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1087
+ */
 #include <iostream>
-
 using namespace std;
 
 /*
@@ -31,5 +35,4 @@ int main()
 	}
 	cout <<n<<endl;
 	return 0;
-	
-} 
+}

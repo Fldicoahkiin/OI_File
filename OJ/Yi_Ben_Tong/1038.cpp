@@ -1,8 +1,11 @@
+/**
+ * 1038：苹果和虫子
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1038
+ */
 #include <iostream>
 #include <cmath>
-//by HHL
 using namespace std;
-
 int main()
 {
 	int n,x,y,u,l;

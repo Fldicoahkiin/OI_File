@@ -1,7 +1,10 @@
+/**
+ * 1066：满足条件的数累加
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1066
+ */
 #include <iostream>
-
 using namespace std;
-
 int main()
 {
 	int k,x,s1=0,s5=0,s10=0;
@@ -27,4 +30,4 @@ int main()
 	}
 	cout <<s1<<endl<<s5<<endl<<s10<<endl;
 	return 0;
-} 
+}

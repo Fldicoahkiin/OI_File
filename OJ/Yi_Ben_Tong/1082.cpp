@@ -1,4 +1,34 @@
+/**
+ * 1082：求小数的某一位
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1082
+ */
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,n;
+    int temp;
+ 
+    cin>>a>>b>>n;
+    for(int i=1;i<=n;i++)
+    {
+    	//cout <<(double)a/b<<endl;
+    	//cout <<"i="<<i<<endl;
+        a=a*10;
+        //cout <<"a:"<<a<<endl;
+        temp=a/b;//temp模拟存储第i位小数
+        //cout <<"temp:"<<temp<<endl;
+        a=a%b; //提取下一位 
+        //cout <<"a2:"<<a<<endl;
+        //cout <<"///////////////////////////////"<<endl;
+    }
+    cout<<temp<<endl;
+    return 0;
+}
+
 /*
+Old
 #include <iostream>
 #include <iomanip>
 
@@ -25,30 +55,3 @@ int main ()
 	return 0;
 }
 */
-#include<iostream>
-using namespace std;
-int main()
-{
-    int a,b,n;
-    int temp;
- 
-    cin>>a>>b>>n;
-    for(int i=1; i<=n; i++)
-    {
-    	//cout <<(double)a/b<<endl;
-    	//cout <<"i="<<i<<endl;
-        a=a*10;
-        //cout <<"a:"<<a<<endl;
-        temp=a/b;//temp模拟存储第i位小数
-        //cout <<"temp:"<<temp<<endl;
-        a=a%b; //提取下一位 
-        //cout <<"a2:"<<a<<endl;
-        //cout <<"///////////////////////////////"<<endl;
-    }
-    cout<<temp<<endl;
-    return 0;
-}
-
-
-
-

@@ -1,4 +1,8 @@
-//1161：转进制
+/**
+ * 1161：转进制
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1161
+ */
 #include <iostream>
 #include <cstring>
 using namespace std;

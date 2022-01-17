@@ -1,9 +1,11 @@
+/**
+ * 1090：含k个3的数
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1090
+ */
 #include <iostream>
-
 using namespace std;
-
 int m,b,f,k;
-
 int main()
 {
 	cin >>m>>k;
@@ -16,7 +18,7 @@ int main()
 			f++;
 		}
 	}
-	if(((m%19)==0)&&(f==k))
+	if(((m%19)==0) && (f==k))
 	{
 		cout <<"YES"<<endl; 
 	}

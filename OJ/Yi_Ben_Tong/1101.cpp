@@ -1,7 +1,10 @@
+/**
+ * 1011：甲流疫情死亡率
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1011
+ */
 #include <iostream>
-
 using namespace std;
-
 int main()
 {
 	int a,b,c,s=0;
@@ -11,11 +14,10 @@ int main()
 		//cout <<"x="<<x<<endl;
 		for(int y=0;y<=c/b;y++)//y
 		{
-			if((x*a)+(b*y)==c)
+			if((x*a)+(b*y) == c)
 			s++;
 		}
 	}
 	cout <<s<<endl;
-	return 0; 
-	
+	return 0;
 }

@@ -1,4 +1,8 @@
-//1318：【例5.3】自然数的拆分
+/**
+ * 1318：【例5.3】自然数的拆分
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1318
+ */
 #include <iostream>
 
 using namespace std;

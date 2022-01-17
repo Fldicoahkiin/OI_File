@@ -1,4 +1,10 @@
-//有问题 
+/**
+ * 1148：连续出现的字符
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1148
+ * 未通过
+ * 抄的
+ */
 #include <iostream>
 #include <cstring>
 #include <cstdio>

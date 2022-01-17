@@ -1,4 +1,9 @@
-//80%
+/**
+ * 1212：LETTERS
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1212
+ * 通过80%
+ */
 #include <iostream>
 #include <cstdio>
 #include <cstring>

@@ -1,7 +1,10 @@
+/**
+ * 1044：判断是否为两位数
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1044
+ */
 #include <iostream>
-
 using namespace std;
-
 int main()
 {
 	int a;
@@ -15,4 +18,4 @@ int main()
 		cout <<"0" <<endl;
 	}
 	return 0;
-} 
+}

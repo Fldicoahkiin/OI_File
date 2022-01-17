@@ -1,8 +1,11 @@
+/**
+ * 1073：救援
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1073
+ */
 #include <iostream>
 #include <cmath>
-
 using namespace std;
-
 int main()
 {
 	int n,p=0;

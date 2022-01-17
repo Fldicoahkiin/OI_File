@@ -1,8 +1,15 @@
+/**
+ * 1128：图像模糊处理
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1128
+ */
 #include <iostream>
 #include <cmath>
 using namespace std;
+
 int pic[101][101];
 double mo[101][101];
+
 int main()
 {
 	int n,m;
@@ -29,7 +36,6 @@ int main()
 		{
 				cout <<mo[i][j]<<" "; 
 		}
-		
 		if(i<n-1)
 		{
 			cout <<endl;

@@ -1,8 +1,11 @@
+/**
+ * 1070：人口增长
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1070
+ */
 #include <iostream>
 #include <iomanip>
-
 using namespace std;
-
 int main()
 {
 	int x,n;

@@ -1,7 +1,10 @@
+/**
+ * 1069：乘方计算
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1069
+ */
 #include <iostream>
-
 using namespace std;
-
 int main()
 {
 	long a,n,x;

@@ -1,7 +1,10 @@
+/**
+ * 1097：画矩形
+ * 
+ * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1097
+ */
 #include <iostream>
-
 using namespace std;
-
 int main()
 {
 	int x,y,f;
@@ -22,14 +25,14 @@ int main()
 	{
 		for(int i=1;i<=y;i++)
 		{
-			if(i==1)
+			if(i == 1)
 			{
 				for(int j=1;j<=x;j++)
 				{
 					cout <<a;
 				}
 			}
-			if(i>1&&i<y)
+			if(i>1 && i<y)
 			{
 				cout <<a;
 				for(int j=1;j<=(x-2);j++)
@@ -38,7 +41,7 @@ int main()
 				}
 				cout <<a;
 			}
-			if(i==y)
+			if(i == y)
 			{
 				for(int j=1;j<=x;j++)
 				{
