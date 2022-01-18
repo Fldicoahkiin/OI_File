@@ -1,7 +1,7 @@
 /**
  * 1099：第n小的质数
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1099
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1099
  */
 #include <iostream>
 #include <cmath>

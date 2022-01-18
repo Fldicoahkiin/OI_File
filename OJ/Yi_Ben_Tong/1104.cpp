@@ -1,7 +1,7 @@
 /**
  * 1104：计算书费
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1104
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1104
  */
 #include <iostream>
 using namespace std;

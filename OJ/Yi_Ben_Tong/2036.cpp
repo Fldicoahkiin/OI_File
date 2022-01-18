@@ -1,12 +1,16 @@
+/**
+ * 2036：【例5.3】开关门
+ * 
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=2036
+ */
 #include <iostream>
-
 using namespace std;
-
+const int MAXN = 1000;
+int a[MAXN];
 int main()
 {
 	int n;
 	cin >>n;
-	int a[n];
 	for(int i=0;i<=n;i++)//初始化数组
 	{
 		a[i]=1;

@@ -1,7 +1,10 @@
+/**
+ * 2035：【例5.2】平移数据
+ * 
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=2035
+ */
 #include <iostream>
-
 using namespace std;
-
 int  main()
 {
 	int n;
@@ -23,4 +26,4 @@ int  main()
 		cout <<a[i]<<" ";
 	}
 	return 0;
-}	
+}

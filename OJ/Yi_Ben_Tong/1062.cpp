@@ -1,5 +1,5 @@
 /**
- * 1062??????
+ * 1062：最高的分数
  * 
  * http://ybt.ssoier.cn:8088/problem_show.php?pid=1062
  */
@@ -18,7 +18,7 @@ int main()
 		if(x>max)
 		{
 			max = x;
-			//cout <<"max��:"<<max<<endl;
+			//cout <<"maxºó:"<<max<<endl;
 		}
 	}
 	cout <<max<<endl;

@@ -1,6 +1,7 @@
 /**
  * 1325：【例7.4】 循环比赛日程表
  * 解法:跟题目没有半毛钱关系,就是单纯的找规律
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1325
  */
 #include <iostream>
 

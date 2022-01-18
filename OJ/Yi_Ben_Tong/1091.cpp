@@ -1,7 +1,7 @@
 /**
  * 1091：求阶乘的和
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1091
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1091
  */
 #include <iostream>
 using namespace std;

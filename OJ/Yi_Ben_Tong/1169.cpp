@@ -1,7 +1,7 @@
 /**
  * 1169：大整数减法
  * 
- * http://ybt.ssoier.cn:8088/problem_show.php?pid=1169
+ * //ybt.ssoier.cn:8088/problem_show.php?pid=1169
  * 未通过
  */
 #include <iostream>

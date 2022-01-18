@@ -1,7 +1,7 @@
 /**
  * 1215：迷宫
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1215
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1215
  * 未通过/提交
  * 抄的
  */

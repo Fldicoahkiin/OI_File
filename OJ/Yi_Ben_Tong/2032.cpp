@@ -1,7 +1,10 @@
+/**
+ * 2032：【例4.18】分解质因数
+ * 
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=2032
+ */
 #include <iostream>
-
 using namespace std;
-
 int main()
 {
 	int n,s=0;

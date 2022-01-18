@@ -1,7 +1,7 @@
 /**
  * 1150：求正整数2和n之间的完全数
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1150
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1150
  */
 #include <iostream>
 using namespace std;

@@ -1,7 +1,7 @@
 /**
  * 1154：亲和数
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1154
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1154
  */
 #include <iostream>
 using namespace std;

@@ -1,7 +1,7 @@
 /**
  * 1090：含k个3的数
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1090
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1090
  */
 #include <iostream>
 using namespace std;

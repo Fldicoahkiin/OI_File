@@ -1,7 +1,7 @@
 /**
  * 1238：一元三次方程求解
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1238
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1238
  */
 #include <iostream>
 #include <iomanip>

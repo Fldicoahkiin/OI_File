@@ -1,7 +1,7 @@
 /**
  * 1109：开关灯
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1109
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1109
  */
 #include <iostream>
 #include <cstring>

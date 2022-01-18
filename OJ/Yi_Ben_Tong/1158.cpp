@@ -1,7 +1,7 @@
 /**
  * 1158：求1+2+3+...
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1158
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1158
  */
 #include <iostream>
 using namespace std;

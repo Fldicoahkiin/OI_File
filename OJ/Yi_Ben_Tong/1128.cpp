@@ -1,7 +1,7 @@
 /**
  * 1128：图像模糊处理
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1128
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1128
  */
 #include <iostream>
 #include <cmath>

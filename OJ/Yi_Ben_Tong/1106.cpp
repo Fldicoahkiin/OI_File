@@ -1,7 +1,7 @@
 /**
  * 1106：年龄与疾病
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1106
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1106
  */
 #include <iostream>
 #include <iomanip>

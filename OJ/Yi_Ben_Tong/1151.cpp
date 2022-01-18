@@ -1,7 +1,7 @@
 /**
  * 1151：素数个数
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1151
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1151
  */
 #include <iostream>
 #include <cmath>

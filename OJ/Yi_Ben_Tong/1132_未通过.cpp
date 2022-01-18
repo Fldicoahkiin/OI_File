@@ -1,7 +1,7 @@
 /**
  * 1132：石头剪子布
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1132
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1132
  * 未通过
  */
 #include <iostream>

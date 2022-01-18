@@ -1,4 +1,8 @@
-//1320：【例6.2】均分纸牌(Noip2002)
+/**
+ * 1320：【例6.2】均分纸牌(Noip2002)
+ * 
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1320
+ */
 #include <iostream>
 #include <cstdio>
 

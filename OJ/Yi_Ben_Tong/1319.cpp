@@ -1,4 +1,8 @@
-//1319：【例6.1】排队接水
+/**
+ * 1319：【例6.1】排队接水
+ * 
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1319
+ */
 #include <iostream>
 #include <cstdio>
 #include <algorithm>

@@ -1,7 +1,7 @@
 /**
  * 1160：倒序数
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1160
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1160
  */
 #include <iostream>
 using namespace std;

@@ -1,5 +1,7 @@
 /**
  * 1327：【例7.6】黑白棋子的移动
+ * 
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1327
  */
 #include <iostream>
 #include <cstdio>
