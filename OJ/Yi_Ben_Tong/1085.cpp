@@ -1,7 +1,7 @@
 /**
  * 1085：球弹跳高度的计算
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1085
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1085
  */
 #include <iostream>
 using namespace std;

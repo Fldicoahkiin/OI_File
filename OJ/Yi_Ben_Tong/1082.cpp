@@ -1,7 +1,7 @@
 /**
  * 1082：求小数的某一位
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1082
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1082
  */
 #include<iostream>
 using namespace std;

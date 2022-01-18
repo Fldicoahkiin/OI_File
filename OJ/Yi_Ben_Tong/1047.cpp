@@ -1,7 +1,7 @@
 /**
  * 1047：判断能否被3，5，7整除
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1047
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1047
  */
 #include<iostream>
 using namespace std;

@@ -1,7 +1,7 @@
 /**
  * 1071：菲波那契数
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1071
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1071
  */
 #include <iostream>
 using namespace std;

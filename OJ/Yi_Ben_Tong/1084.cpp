@@ -1,7 +1,7 @@
 /**
  * 1084：幂的末尾
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1084
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1084
  */
 #include <iostream>
 using namespace std;

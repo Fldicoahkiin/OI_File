@@ -1,7 +1,7 @@
 /**
  * 1066：满足条件的数累加
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1066
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1066
  */
 #include <iostream>
 using namespace std;

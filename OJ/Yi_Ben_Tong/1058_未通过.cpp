@@ -1,7 +1,7 @@
 /**
  * 1058：求一元二次方程
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1058
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1058
  * 未通过
  */
 #include <iostream>

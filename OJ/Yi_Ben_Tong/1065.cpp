@@ -1,7 +1,7 @@
 /**
  * 1065：奇数求和
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1065
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1065
  */
 #include <iostream>
 using namespace std;

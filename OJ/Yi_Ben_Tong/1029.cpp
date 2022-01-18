@@ -1,7 +1,7 @@
 /**
  * 1029：计算浮点数相除的余
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1029
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1029
  */
 #include <iostream>
 #include <iomanip>

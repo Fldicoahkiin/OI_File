@@ -1,7 +1,7 @@
 /**
  * 1003：对齐输出
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1003
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1003
  */
 #include <iostream>
 #include <iomanip>

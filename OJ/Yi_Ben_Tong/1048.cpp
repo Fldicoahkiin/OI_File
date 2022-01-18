@@ -1,7 +1,7 @@
 /**
  * 1048：有一门课不及格的学生
  * 
- * Link:http://ybt.ssoier.cn:8088/problem_show.php?pid=1048
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=1048
  */
 #include <iostream>
 using namespace std;
