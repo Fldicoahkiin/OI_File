@@ -1,6 +1,11 @@
+/**
+ * 2046：【例5.15】替换字母
+ * 
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=2046
+ * 有问题
+ */
 #include <iostream>
 #include <cstring>
-//#include <cstdio>
 
 using namespace std;
 
@@ -9,7 +14,7 @@ int main()
 	char ori[500];
 	char a,b;
 	
-	gets(ori);//输入
+	cin.getline(ori,20,'/');//输入
 
 	cin >>a>>b;
 

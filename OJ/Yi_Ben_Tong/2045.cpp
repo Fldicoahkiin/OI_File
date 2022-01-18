@@ -1,5 +1,9 @@
+/**
+ * 2045：【例5.13】蛇形填数
+ * 
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=2045
+ */
 #include <iostream>
-
 using namespace std;
 
 int a[21][21]={0};

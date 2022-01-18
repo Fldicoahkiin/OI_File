@@ -1,6 +1,9 @@
-//2043：【例5.11】杨辉三角形
+/**
+ * 2043：【例5.11】杨辉三角形
+ * 
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=2043
+ */
 #include <iostream>
-
 using namespace std;
 
 int san[20][20]={{0,1},{1,1,1}};

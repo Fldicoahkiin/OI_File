@@ -1,12 +1,18 @@
-//2039：【例5.6】冒泡排序
+/**
+ * 2039：【例5.6】冒泡排序
+ * 
+ * http://ybt.ssoier.cn:8088/problem_show.php?pid=2039
+ */
 #include <iostream>
 #include <algorithm>
-
 using namespace std;
 
 int a[30];
 
-bool cmp(int a,int b){return a>b;}
+bool cmp(int a,int b)
+{
+	return a>b;
+}
 
 int main()
 {
