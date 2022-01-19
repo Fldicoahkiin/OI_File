@@ -1,6 +1,6 @@
 /**
  * P1932 A+B A-B A*B A/B A%B Problem
- * 
+ *
  * https://www.luogu.com.cn/problem/P1932
  * 没写完
  */
@@ -39,7 +39,7 @@ int main()
 	freopen("P1932_1.in","r",stdin);
 	string sa,sb;
 	cin >>sa>>sb;
-	
+
 	//转换
 	//倒着转的,123->321
 	for(int i=0;i<sa.size();i++)
@@ -50,10 +50,10 @@ int main()
 	{
 		b[i]=sb[sb.size()-i-1]-'0';
 	}
-	
+
 	//加法
 	int len=max(sa.size(),sb.size());
-	
+
 	for(int i=0;i<len;i++)
 	{
 		c[i]=a[i]+b[i];
@@ -64,18 +64,18 @@ int main()
 		c[i]=c[i]%10;
 	}
 	if(c[len]>0) len++;
-	
+
 	for(int i=len-1;i>=0;i--)
 	{
 		cout <<c[i];
 	}
 	cout <<endl;
-	
+
 	//减法
 	len=max(sa.size(),sb.size());
 	if(!string_compare(sa,sb))
 	{
-		swap(a,b);	
+		swap(a,b);
 		cout <<"-";
 	}
 	for(int i=0;i<=len;i++)
@@ -96,5 +96,7 @@ int main()
 		cout <<c[i];
 	}cout <<endl;
 	
+	//乘法
+	len=max(sa.size(),sb.size());
 	return 0;
 }

@@ -20,17 +20,17 @@ inline void pop()
 //入栈
 inline void push(int n)
 {
-	stack[top++]=n;
+	stack[++top]=n;
 }
 
 char s;
-long long len;
+int len;
 int temp1,temp2;
 
 int main()
 {
 	freopen("P1449.in","r",stdin);
-	
+
 	while(s!='@')
 	{
 		s=getchar();
@@ -72,48 +72,48 @@ int main()
 				len=len*10+(s-'0');
 				break;
 		}
-		/**
-		while(s>='0' && s<='9')
-		{
-			temp1=temp1*10+(s-'0');
-		}
-		if(s>='0' && s<='9')
-		{
-			push(temp1);
-		}
-		else if(s=='+')
-		{
-			pop();
-			temp2=stack[top];
-			pop();
-			temp1=stack[top];
-		}
-		else if(s=='-')
-		{
-			pop();
-			temp2=stack[top];
-			pop();
-			temp1=stack[top];
-			push(temp1-temp2);
-		}
-		else if(s=='*')
-		{
-			pop();
-			temp2=stack[top];
-			pop();
-			temp1=stack[top];
-			push(temp1*temp2);
-		}
-		else if(s=='/')
-		{
-			pop();
-			temp2=stack[top];
-			pop();
-			temp1=stack[top];
-			push(temp1/temp2);
-		}
-		*/
 	}
+	/**
+	while(s>='0' && s<='9')
+	{
+		temp1=temp1*10+(s-'0');
+	}
+	if(s>='0' && s<='9')
+	{
+		push(temp1);
+	}
+	else if(s=='+')
+	{
+		pop();
+		temp2=stack[top];
+		pop();
+		temp1=stack[top];
+	}
+	else if(s=='-')
+	{
+		pop();
+		temp2=stack[top];
+		pop();
+		temp1=stack[top];
+		push(temp1-temp2);
+	}
+	else if(s=='*')
+	{
+		pop();
+		temp2=stack[top];
+		pop();
+		temp1=stack[top];
+		push(temp1*temp2);
+	}
+	else if(s=='/')
+	{
+		pop();
+		temp2=stack[top];
+		pop();
+		temp1=stack[top];
+		push(temp1/temp2);
+	}
+	*/
 	cout<<stack[top];
 	return 0;
 }

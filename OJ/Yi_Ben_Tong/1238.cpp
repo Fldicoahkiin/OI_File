@@ -1,7 +1,8 @@
 /**
  * 1238：一元三次方程求解
- * 
+ *
  * http://ybt.ssoier.cn:8088/problem_show.php?pid=1238
+ * 做法就是一点一点加就tm离谱
  */
 #include <iostream>
 #include <iomanip>
@@ -45,14 +46,14 @@ int main()
 {
 	freopen("1238.in","r",stdin);
 //	freopen("1238.out","w",stdout);
-	
+
 	cin>>a>>b>>c>>d;
 //	cout <<"a="<<a<<endl<<"b="<<b<<endl<<"c="<<c<<endl<<"d="<<d<<endl;
-	
+
 	double x,ans;
 	cout.precision(2);
 	cout.setf(ios::fixed);
-	
+
 	for(int i=-10000;i<=10000;x=(++i)/100.0)
 	{
 		ans=a*x*x*x+b*x*x+c*x+d;
@@ -61,6 +62,6 @@ int main()
 			cout <<x<<" ";
 		}
 	}
-	
+
 	return 0;
 }
