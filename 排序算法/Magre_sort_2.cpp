@@ -1,5 +1,5 @@
 /**
- * ³­+ĞŞ¸Ä£¬ÓÃvectorÊı×éĞ´µÄ¹é²¢ÅÅĞòËã·¨
+ * æŠ„+ä¿®æ”¹ï¼Œç”¨vectoræ•°ç»„å†™çš„å½’å¹¶æ’åºç®—æ³•
  */
 
 #include <iostream>
@@ -61,11 +61,11 @@ int main()
 		}
 	}
 
-	cout << "ÊäÈëÔªËØ¸öÊıÎª£º" << value.size()<<endl<<"Ç°:";
+	cout << "è¾“å…¥å…ƒç´ ä¸ªæ•°ä¸ºï¼š" << value.size()<<endl<<"å‰:";
 	for (size_t i = 0; i < value.size(); i++)
 	{
 		cout <<setw(3)<<value[i];
-	}cout<<endl<<"ºó:";
+	}cout<<endl<<"å:";
 
 	MergeSort(value,0,value.size()-1);
 

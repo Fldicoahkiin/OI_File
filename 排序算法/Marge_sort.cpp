@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void merge(int a[],int left,int mid,int right)//ºÏ²¢
+void merge(int a[],int left,int mid,int right)//åˆå¹¶
 {
 	int Temp[MAXN];
 	int i=left,j=mid+1;
@@ -35,17 +35,17 @@ void merge(int a[],int left,int mid,int right)//ºÏ²¢
 
 	return;
 }
-void merge_sort(int a[],int left,int right)//·ÖÀë+ºÏ²¢(Ì×ÓÃmerge)
+void merge_sort(int a[],int left,int right)//åˆ†ç¦»+åˆå¹¶(å¥—ç”¨merge)
 {
 	int mid=(left+right)/2;
 
-	if(left<mid)//ºÏ²¢×ó±ß
+	if(left<mid)//åˆå¹¶å·¦è¾¹
 		merge_sort(a,left,mid);
 
-	if(mid+1<right)//ºÏ²¢ÓÒ±ß
+	if(mid+1<right)//åˆå¹¶å³è¾¹
 		merge_sort(a,mid+1,right);
 
-	merge(a,left,mid,right);//ºÏ²¢×óÓÒÁ½±ß
+	merge(a,left,mid,right);//åˆå¹¶å·¦å³ä¸¤è¾¹
 
 	return;
 }
@@ -55,12 +55,12 @@ int main()
 
 	int n;int value[MAXN];
 
-	cin>>n;cout<<"n="<<n<<endl<<"Ç°:";
+	cin>>n;cout<<"n="<<n<<endl<<"å‰:";
 	for(int i=1;i<=n;i++)
 	{
 		cin>>value[i];
 		cout<<setw(3)<<value[i];
-	}cout <<endl<<"ºó:";
+	}cout <<endl<<"å:";
 
 	merge_sort(value,1,n);
 
