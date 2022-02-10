@@ -9,5 +9,6 @@ int main()
 		cout<<i<<"*"<<j<<"="<<i*j<<" ";
 		cout<<endl;
 	}
+	system("Pause");
 	return 0;
 }
