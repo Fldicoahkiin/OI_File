@@ -3,13 +3,13 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe 生成活动文件",
-            "command": "D:\\MinGW\\bin\\g++.exe",
+            "command": "C:\\MinGW\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "F:\\C++\\hhl\\Debug\\Temp_Debug.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
