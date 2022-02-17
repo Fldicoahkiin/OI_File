@@ -48,5 +48,6 @@ int main()
 	{
 		cout <<c[i];
 	}
+	system("pause");
 	return 0;
 }
