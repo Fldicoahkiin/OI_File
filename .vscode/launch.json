@@ -5,7 +5,7 @@
       "name": "g++.exe生成和调试活动文件",
       "type": "cppdbg",
       "request": "launch",
-      "program": "F:\\C++\\hhl\\Debug\\Temp.exe",
+      "program": "F:\\C++\\WorkSpace\\Debug\\Temp.exe",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",

@@ -9,7 +9,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "F:\\C++\\hhl\\Debug\\Temp.exe"
+                "F:\\C++\\WorkSpace\\Debug\\Temp.exe"
             ],
             "options": {
                 "cwd": "${workspaceRoot}"
