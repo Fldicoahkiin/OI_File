@@ -3,13 +3,13 @@
         {
             "type": "shell",
             "label": "g++.exe生成和调试活动文件",
-            "command": "C:\\MinGW\\bin\\g++.exe",
+            "command": "F:\\C++\\MinGW\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "F:\\C++\\WorkSpace\\Debug\\Temp.exe"
+                "F:\\C++\\WorkSpace\\Debug\\Temp_${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${workspaceRoot}"
