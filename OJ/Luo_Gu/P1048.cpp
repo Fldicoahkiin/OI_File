@@ -22,39 +22,19 @@ int mem[MAXN][MAXN];
 int ret[MAXN];
 
 int dfs(int pos, int tleft) {
-	if (mem[pos][tleft] != -1)
-	{
-		return mem[pos][tleft];
-	}
-	if (pos == M + 1)
-	{
-		return mem[pos][tleft] = 0;
-	}
 
-	int dfs1, dfs2 = -INF;
-
-	dfs1 = dfs(pos + 1, tleft);
-
-	if (tleft >= timecost[pos])
-	{
-		dfs2 = dfs(pos + 1, tleft - timecost[pos]) + worth[pos];
-	}
-
-	return mem[pos][tleft] = max(dfs1, dfs2);
 }
 
 int main()
 {
     freopen("P1048.in","r",stdin);
-
-/**折磨自己
+/*折磨自己
     scanf("%d %d",&T,&M);
 	for(int i=1;i<=M;i++)
 	{
 		scanf("%d %d",&Time[i],&worth[i]);
 	}
-*/
-
+	*/
 	cin>>T>>M;
 	for(int i=1;i<=M;i++)
 	{
@@ -63,6 +43,5 @@ int main()
 	}
 
 	cout<<dfs(1,T)<<endl;
-	system("pause");
     return 0;
 }

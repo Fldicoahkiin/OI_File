@@ -1,28 +1,43 @@
 {
-    "tasks": [
-        {
-            "type": "shell",
-            "label": "g++.exe生成和调试活动文件",
-            "command": "F:\\C++\\MinGW\\bin\\g++.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "F:\\C++\\WorkSpace\\Debug\\Temp_${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "${workspaceRoot}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "调试器生成的任务。"
-        }
-    ],
-    "version": "2.0.0"
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "g++.exe build active file",
+      "command": "F:\\C++\\mingw64\\bin\\g++.exe",
+      "args": [
+        "-g",
+        "-std=c++17",
+        "\"${file}\"",
+        "-o",
+        "\"${fileDirname}\\${fileBasenameNoExtension}.exe\""
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": false,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    }
+  ],
+  "options": {
+    "shell": {
+      "executable": "${env:SystemRoot}\\System32\\cmd.exe",
+      "args": [
+        "/c"
+      ]
+    },
+    "env": {
+      "Path": "F:\\C++\\mingw64\\bin;${env:Path}"
+    }
+  }
 }
