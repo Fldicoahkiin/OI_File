@@ -12,7 +12,7 @@
       "name": "gcc single file debug",
       "preLaunchTask": "gcc single file build",
       //"program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-      "program": "${workspaceFolder}\\Debug\\Temp_${fileBasenameNoExtension}.exe",
+      "program": "${workspaceFolder}\\Debug\\Temp.exe",
       "request": "launch",
       "setupCommands": [
         {

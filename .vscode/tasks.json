@@ -19,7 +19,7 @@
         "${file}",
         "-o",
         //"${fileDirname}\\${fileBasenameNoExtension}.exe"
-        "${workspaceFolder}\\Debug\\Temp_${fileBasenameNoExtension}.exe"
+        "${workspaceFolder}\\Debug\\Temp.exe"
       ],
       //"command": "F:\\C++\\WorkSpace\\mingw64\\bin\\g++.exe",
       "command": "${workspaceFolder}\\mingw64\\bin\\g++.exe",
