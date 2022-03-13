@@ -5,7 +5,7 @@
       "args": [],
       "cwd": "${fileDirname}",
       "environment": [],
-      "externalConsole": false,
+      "externalConsole": true,
       "internalConsoleOptions": "neverOpen",
       //"miDebuggerPath": "F:\\C++\\WorkSpace\\mingw64\\bin\\gdb.exe",
       "miDebuggerPath": "${workspaceFolder}\\mingw64\\bin\\gdb.exe",
