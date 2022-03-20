@@ -5,14 +5,12 @@
       "args": [],
       "cwd": "${fileDirname}",
       "environment": [],
-      "externalConsole": true,
+      "externalConsole": false,
       "internalConsoleOptions": "neverOpen",
-      //"miDebuggerPath": "F:\\C++\\WorkSpace\\mingw64\\bin\\gdb.exe",
       "miDebuggerPath": "${workspaceFolder}\\mingw64\\bin\\gdb.exe",
       "name": "gcc single file debug",
-      "preLaunchTask": "gcc single file build",
-      //"program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-      "program": "${workspaceFolder}\\Debug\\Temp.exe",
+      "preLaunchTask": "check ascii",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
       "request": "launch",
       "setupCommands": [
         {

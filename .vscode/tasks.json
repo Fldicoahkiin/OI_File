@@ -1,7 +1,6 @@
 {
   "options": {
     "env": {
-      //"Path": "F:\\C++\\WorkSpace\\mingw64\\bin;${env:Path}"
       "Path": "${workspaceFolder}\\mingw64\\bin;${env:Path}"
     },
     "shell": {
@@ -15,13 +14,16 @@
     {
       "args": [
         "-std=c++23",
+        "-Wall",
+        "-Wextra",
+        "-fexec-charset=GBK",
+        "-static-libgcc",
+        "-static-libstdc++",
         "-g",
         "${file}",
         "-o",
-        //"${fileDirname}\\${fileBasenameNoExtension}.exe"
-        "${workspaceFolder}\\Debug\\Temp.exe"
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],
-      //"command": "F:\\C++\\WorkSpace\\mingw64\\bin\\g++.exe",
       "command": "${workspaceFolder}\\mingw64\\bin\\g++.exe",
       "group": {
         "isDefault": true,
@@ -37,6 +39,29 @@
         "showReuseMessage": false
       },
       "problemMatcher": "$gcc",
+      "type": "process"
+    },
+    {
+      "args": [
+        "-ExecutionPolicy",
+        "ByPass",
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}\\mingw64\\bin\\check-ascii.ps1",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "command": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "dependsOn": "gcc single file build",
+      "label": "check ascii",
+      "presentation": {
+        "clear": true,
+        "echo": false,
+        "focus": false,
+        "panel": "shared",
+        "reveal": "never",
+        "showReuseMessage": false
+      },
+      "problemMatcher": [],
       "type": "process"
     }
   ],
