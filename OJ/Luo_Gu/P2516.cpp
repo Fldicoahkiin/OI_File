@@ -10,8 +10,8 @@ using namespace std;
 
 const int MAXN =10000;
 
-int X[MAXN],Xn;
-int Y[MAXN],Yn;
+int X[MAXN],Xn=1;
+int Y[MAXN],Yn=1;
 
 char ch;//temp
 int f[MAXN][MAXN],g[MAXN][MAXN];
@@ -21,17 +21,26 @@ int f[MAXN][MAXN],g[MAXN][MAXN];
 int main()
 {
 	freopen("P2516.in","r",stdin);
-	
+
+	//洛谷读法
 	for(int i=1;(ch=getchar())!='.';X[i]=ch,Xn=i,i++);
 	getchar();//换行
 	for(int i=1;(ch=getchar())!='.';Y[i]=ch,Yn=i,i++);
-	
+
 	//一本通1265读法
 	/*
-	for(int i=1;(ch=getchar())!=10;X[i]=ch,Xn=i,i++);//因为char(10)已经被读入就不用再getchar()了
-	for(int i=1;(ch=getchar())!=10;Y[i]=ch,Yn=i,i++);
+	while((ch=getchar())>='A'&&ch<='Z')
+	{
+		if(ch=='\n')
+			break;
+		X[Xn++]=ch;
+	}
+	while((ch=getchar())>='A'&&ch<='Z')
+	{
+		Y[Yn++]=ch;
+	}
 	*/
-	
+
 	for(int i=1;i<=Xn;i++)
 	{
 		for(int j=1;j<=Yn;j++)
