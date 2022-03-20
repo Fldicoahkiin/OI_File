@@ -1,7 +1,6 @@
 {
   "configurations": [
     {
-      //"compilerPath": "F:\\C++\\WorkSpace\\mingw64\\bin\\g++.exe",
       "compilerPath": "${workspaceFolder}\\mingw64\\bin\\g++.exe",
       "cppStandard": "c++20",
       "includePath": [
