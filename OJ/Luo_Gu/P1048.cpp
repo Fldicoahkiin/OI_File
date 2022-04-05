@@ -21,14 +21,15 @@ int worth[MAXN];
 int mem[MAXN][MAXN];
 int ret[MAXN];
 
-int dfs(int pos, int tleft) {
+int dfs(int pos, int tleft)
+{
 
 }
 
 int main()
 {
     freopen("P1048.in","r",stdin);
-/*折磨自己
+	/*折磨自己
     scanf("%d %d",&T,&M);
 	for(int i=1;i<=M;i++)
 	{

@@ -23,12 +23,13 @@ int main()
 	freopen("P2516.in","r",stdin);
 
 	//洛谷读法
+	/*
 	for(int i=1;(ch=getchar())!='.';X[i]=ch,Xn=i,i++);
 	getchar();//换行
 	for(int i=1;(ch=getchar())!='.';Y[i]=ch,Yn=i,i++);
+	*/
 
 	//一本通1265读法
-	/*
 	while((ch=getchar())>='A'&&ch<='Z')
 	{
 		if(ch=='\n')
@@ -39,7 +40,6 @@ int main()
 	{
 		Y[Yn++]=ch;
 	}
-	*/
 
 	for(int i=1;i<=Xn;i++)
 	{
