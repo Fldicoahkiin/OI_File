@@ -51,6 +51,8 @@ int main()
 		nm[i]=ch-'0';
 		nmq[i][i]=nm[i];
 	}
+	
+	
 	//初始化
 	for(int i=1;i<=n;i++)
 	{
