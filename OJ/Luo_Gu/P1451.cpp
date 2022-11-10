@@ -12,10 +12,10 @@ const int MAXN = 10000
 
 struct queue
 {
-	int x,y;
+	int x;
+	int y;
 }
-int head,tail;
-queue cell;
+cell
 
 int bfs()
 {
