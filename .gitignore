@@ -1,6 +1,4 @@
 *.exe
-*.in
-*.out
 ~$*
 /Debug
 /mingw64
