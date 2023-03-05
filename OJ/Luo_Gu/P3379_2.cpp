@@ -20,10 +20,9 @@ void add(int u,int v)
 	E[u].head=cnt++;
 }
 
-void LgDefine()
+inline void LgDefine()
 {
 	lg[1]=0;
-	
 	for(int i=2;i<=MAXN;i++)
 	{
 		lg[i]=lg[i/2]+1;
@@ -32,7 +31,7 @@ void LgDefine()
 
 void DFS(int u,int f)
 {
-	depth[u]=depth[a]+1;
+	depth[u]=depth[f]+1;
 	for(int i=1;i<=lg[depth[u]];i++)
 	{
 		
@@ -65,3 +64,6 @@ int main()
 	}
 	return 0;
 }
+
+// Copy
+// https://www.luogu.com.cn/blog/Otto-Apocalypse/solution-p3379
