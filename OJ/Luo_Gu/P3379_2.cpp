@@ -1,64 +1,73 @@
 //倍增做法
 #include<bits/stdc++.h>
-#define int long long
+#define ll long long
 using namespace std;
-const int MAXN = 1000000;
 
-int lg[MAXN];
-int depth[MAXN];
-int fa[MAXN][233];
-struct Node
+const int MAXN = 500001;
+
+ll head[MAXN];
+ll lg[MAXN];
+ll deep[MAXN];
+ll fa[MAXN][233];
+
+struct
 {
-	int to,nxt,head;
-}E[MAXN];
+	ll to,nxt;
+}E[MAXN*2];
 
-int cnt;
-void add(int u,int v)
+ll cnt;
+inline void add(ll from,ll to)
 {
 	E[cnt].to=to;
-	E[cnt].nxt=nxt;
-	E[u].head=cnt++;
+	E[cnt].nxt=head[from];
+	head[from]=cnt++;
 }
 
 inline void LgDefine()
 {
 	lg[1]=0;
-	for(int i=2;i<=MAXN;i++)
+	for(ll i=2;i<=MAXN;i++)
 	{
 		lg[i]=lg[i/2]+1;
 	}
 }
 
-void DFS(int u,int f)
+inline void DFS(ll u,ll f)
 {
-	depth[u]=depth[f]+1;
-	for(int i=1;i<=lg[depth[u]];i++)
+	fa[u][0]=f;
+	deep[u]=deep[fa[u][0]+1];
+	for(ll i=1;i<lg[deep[u]];i++)
 	{
+		fa[u][i]=fa[fa[u][i-1]][i-1];
 		
 	}
+	
 }
 
-int LCA(int x,int y)
+ll LCA(ll x,ll y)
 {
+	if(deep[x]<deep[y]) swap(x,y);
+	
 	
 }
 
 int main()
 {
-	int N,M,S;
+	ll N,M,S;
 	cin>>N>>M>>S;
-	for(int i=1;i<=N-1;i++)
+	for(ll i=1;i<=N-1;i++)
 	{
-		int x,y;
+		ll x,y;
 		cin>>x>>y;
 		add(x,y);
 		add(y,x);
 	}
 	LgDefine();
+	
 	DFS(S,0);
 	while(M--)
 	{
-		int x,y;
+		ll x,y;
 		cin>>x>>y;
 		cout<<LCA(x,y)<<endl;
 	}
