@@ -33,14 +33,13 @@ int main()
 	int ans=0;
 	for(int i=1;i<=M;i++)
 	{
-		int tempx,tempy,t;
-		cin>>tempx>>tempy>>t;
-		if(t<find(road[tempx].val))
+		int x,y,t;
+		cin>>x>>y>>t;
+		if(t<find(road[x].val))
 		{
-			road[tempx].val=t;
-			ans=ans+road[tempx].val;
+			road[x].val=t;
+			ans=ans+road[x].val;
 		}
-		
 	}
 	
 	if(road[1].fa==find(road[1].fa))

@@ -1,13 +1,13 @@
 //倍增做法
 #include<bits/stdc++.h>
-#define ll long long
+typedef long long ll;
 using namespace std;
 
-const int MAXN = 500001;
+const int MAXN = 500002;
 
 ll head[MAXN];
 ll deep[MAXN];
-ll fa[MAXN][233];
+ll fa[MAXN][23];
 
 struct
 {
@@ -45,24 +45,21 @@ ll LCA(ll x,ll y)
 {
 	if(deep[x]<deep[y]) swap(x,y);
 	
-	for(int i=20;i>=0;i--)
+	for(ll i=20;i>=0;i--)
 	{
-		if(fa[x][i]!=0) x=fa[x][i];
+		//if(deep[y]<=deep[x]-(1<<i)) x=fa[x][i];
+		if(deep[fa[x][i]]>=deep[y]) x=fa[x][i];
 	}
 	
-	if(x==y)
-	{
-		return x;
-	}
+	if(x==y) return x;
 	
 	for(ll i=20;i>=0;i--)
 	{
 		if(fa[x][i]!=fa[y][i])
 		{
-			cout<<x<<":"<<y<<":"<<i<<endl;
+			//cout<<x<<":"<<y<<":"<<i<<endl;
 			x=fa[x][i];
 			y=fa[y][i];
-			//cout<<x<<":"<<y<<endl;
 		}
 	}
 	return fa[x][0];
@@ -72,21 +69,20 @@ int main()
 {
 	ll N,M,S;
 	cin>>N>>M>>S;
+	
+	ll x,y;
 	for(ll i=1;i<=N-1;i++)
 	{
-		ll x,y;
 		cin>>x>>y;
 		add(x,y);
 		add(y,x);
 	}
 	
-
 	DFS(S,0);
-	while(M--)
+	for(ll i=1;i<=M;i++)
 	{
-		ll x,y;
 		cin>>x>>y;
-		cout<<"("<<x<<":"<<y<<")"<<endl;
+		//cout<<"("<<x<<":"<<y<<")"<<endl;
 		cout<<LCA(x,y)<<endl;
 	}
 	return 0;
@@ -95,3 +91,4 @@ int main()
 // Copy
 // https://www.luogu.com.cn/blog/Otto-Apocalypse/solution-p3379
 // https://www.luogu.com.cn/blog/user25029/solution-p3379
+// https://www.luogu.com.cn/blog/polar-bear/solution-p3379
