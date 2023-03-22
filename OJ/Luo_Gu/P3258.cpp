@@ -8,7 +8,7 @@ int head[MAXN];
 struct
 {
 	int to,nxt,val;
-} E[MAXN];
+} E[MAXN*2];
 
 int cnt;
 inline void add(int to,int from,int val)
@@ -19,6 +19,28 @@ inline void add(int to,int from,int val)
 	E[cnt].val=val;
 	head[to]=cnt;
 }
+
+int fa[MAXN][23];
+int deep[MAXN];
+inline void dfs(int u,int f)
+{
+	fa[u][0]=f;
+	deep[u]=deep[f]+1;
+	for(int i=1;i<=20 && fa[u][i-1]!=0;i++)
+	{
+		fa[u][i]=fa[ fa[u][i-1] ][i-1];
+	}
+	for(int i=head[i];i;i=E[i].nxt)
+	{
+		if(E[i].to!=f)
+		{
+			dfs(E[i].to,u);
+		}
+	}
+	return;
+}
+
+inline int lca()
 
 int main()
 {
