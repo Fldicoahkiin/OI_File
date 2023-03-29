@@ -11,40 +11,40 @@ struct
 }E[MAXN];
 
 int cnt;
-inline void Eupdate(int u,int v,int val)
+inline void Eupdate(int from,int to,int val)
 {
 	cnt++;
-	E[cnt].to=u;
+	E[cnt].to=to;
 	E[cnt].val=val;
-	E[cnt].nxt=v;
-	head[u]=cnt;
+	E[cnt].nxt=head[from];
+	head[from]=cnt;
 }
 
 ll dis[MAXN];
 bool vis[MAXN];
-void dijkstra(int u,int n)
+void dijkstra(int s,int n)
 {
-	ll INF=2147483647;
+	ll INF=0x7fffffff;
 	for(int i=1;i<=n;i++) dis[i]=INF;
-	dis[u]=0;
+	dis[s]=0;
 	
 	for(int i=1;i<=n;i++)
 	{
-		// for(int j=1;j<=n;j++)
-		// {
-			// if(vis[j]==0 && dis[j]<INF)
-			// {
-				// INF=dis[j];
-				// u=j;
-			// }
-		// }
+		int k=0;
+		for(int j=1;j<=n;j++)
+		{
+			if(vis[j]==0 && (dis[j]<dis[k] || k==0))
+			{
+				k=j;
+			}
+		}
 		
-		vis[u]=1;
-		for(int i=head[u];i!=0;i=E[i].nxt)
+		vis[k]=1;
+		for(int i=head[k];i!=0;i=E[i].nxt)
 		{
 			if(vis[E[i].to]==0)
 			{
-				dis[E[i].to]=min(dis[E[i].to],dis[u]+E[i].val);
+				dis[E[i].to]=min(dis[E[i].to],dis[k]+E[i].val);
 			}
 		}
 	}
