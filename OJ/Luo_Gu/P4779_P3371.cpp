@@ -22,7 +22,7 @@ inline void Eupdate(int from,int to,int val)
 
 ll dis[MAXN];
 bool vis[MAXN];
-void dijkstra(int s,int n)
+inline void dijkstra(int s,int n)
 {
 	ll INF=0x7fffffff;
 	for(int i=1;i<=n;i++) dis[i]=INF;
@@ -70,6 +70,3 @@ int main()
 	}
 	return 0;
 }
-
-//链式前向星
-//https://www.luogu.com.cn/blog/_post/115781
