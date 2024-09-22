@@ -1,14 +1,19 @@
 {
-  "configurations": [
-    {
-      "compilerPath": "E:\\C++\\WorkSpace\\mingw64\\bin\\g++.exe",
-      "cppStandard": "c++20",
-      "includePath": [
-        "${workspaceFolder}/**"
-      ],
-      "intelliSenseMode": "windows-gcc-x64",
-      "name": "Win32"
-    }
-  ],
-  "version": 4
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22621.0",
+            "compilerPath": "W:/msys64/mingw64/bin/gcc.exe",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
 }
