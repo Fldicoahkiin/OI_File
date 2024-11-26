@@ -22,12 +22,10 @@ bool string_compare(string a,string b)
 			if(a[i]>=b[i])
 			{
 				return true;
-				break;
 			}
 			if(a[i]<b[i])
 			{
 				return false;
-				break;
 			}
 		}
 	}
@@ -36,7 +34,7 @@ bool string_compare(string a,string b)
 
 int main()
 {
-	freopen("P1932_1.in","r",stdin);
+	freopen_s("P1932_1.in","r",stdin);
 	string sa,sb;
 	cin >>sa>>sb;
 
@@ -89,7 +87,7 @@ int main()
 	}
 	for(int i=len-1;i>=0;i--)
 	{
-		while(c[i]==0 && !a[i]>0)
+		while(c[i]==0 && a[i] <= 0)
 		{
 			i--;
 		}
